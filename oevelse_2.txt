@@ -1,0 +1,51 @@
+Retningslinjer:
+
+- FOCUS on users tasks
+  x De har en brugercentreret forside, med reservation på forsiden (formålet med
+    siden)
+  x Muligheden for at rette eller annullere en tidligere ordre er gemt væk,
+    side om side med bonuskort og rejseråd.
+
+- Visibility on system status
+  x Når man reserverer en bil bliver der vist en status mens forespørgslen
+    bliver behandlet. Det opfylder kravene om synlighed.
+
+- Match between system and the real world
+  x Siden bruger ikke komplicerede eller tekniske termer til at beskrive bilerne
+    man kan leje, men holder derimod sproget i menigmandszonen
+  x Siden viser menupunkter og information i en naturlig orden, hvor det
+    vigtigste for brugeren bliver vist først.
+
+- User control & freedom
+  x Der er god mulighed for at hoppe frem og tilbage i forskellige stadier af
+    reservationen. Det er også muligt at slette reservationen når den er blevet
+    oprettet.
+  x Stadieoversigten kan være svær at få øje på
+
+- Consistency and standards
+  x Vi har ikke været i stand til at finde handlinger, ord eller situationer der
+    betyder det samme, og forvirrer brugeren
+
+- Error prevention
+  x Hvis man indtaster en afleveringsdato der er tidligere end
+    afhentningsdatoen, kommer siden med to fejlmeddelelser, hvilket ikke er videre
+    elegant.
+  x Når man indtaster kontaktinformation forkert, viser siden de fejlagtige
+    indtastninger korrekt
+
+- Recognition rather than recall
+  x Siden husker indtastede data på tværs af stadier. Brugeren bliver ikke
+    tvunget til selv at huske noget.
+  x Der er hjælpeknapper, og de handlinger hvis betydning ikke er indlysende har
+    en forklaring
+
+- Flexibility and efficiency of use
+  x Der er ikke mulighed for at lagre sin kontaktinformation på siden, ved fx at
+    oprette en bruger.
+  x Det er heller ikke muligt at bruge en tidligere reservering. Man kunne
+    forestille sig en bruger, der jævnligt lejer den samme bil, fra det samme
+    afhentningssted og afleverer den ved det samme afleveringssted
+
+- Aesthetic and minimalist design
+  x Selv om farveskemaet er konsistent og enkelt, ligner forsiden Mogens
+    Glistrups ansigt. Siden er ikke minimalistisk, 
