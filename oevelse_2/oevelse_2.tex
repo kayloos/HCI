@@ -1,23 +1,9 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
 
-\usepackage{geometry} % to change the page dimensions
-\geometry{a4paper} % or letterpaper (US) or a5paper or....
-% \geometry{margins=2in} % for example, change the margins to 2 inches all round
-% \geometry{landscape} % set up the page for landscape
-%   read geometry.pdf for detailed page layout information
-
-\usepackage{graphicx} % support the \includegraphics command and options
-\usepackage{booktabs} % for much better looking tables
-\usepackage{array} % for better arrays (eg matrices) in maths
-\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
-\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
-\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
-% These packages are all incorporated in the memoir class to one degree or another...
-
-%%% ToC (table of contents) APPEARANCE
-\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
-\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subfig}
 
 \usepackage[danish]{babel}
 \usepackage{mathpazo}
@@ -25,9 +11,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb}
 
-%%% HEADERS & FOOTERS
-\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
-\pagestyle{fancy} % options: empty , plain , fancy
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \lhead{}\chead{}\rhead{Københavns Universitet}
 \lfoot{}\cfoot{\thepage}\rfoot{}
 
@@ -36,6 +21,18 @@
 Christensen}
 \begin{document}
 \section{Arbejdsopgaver}
+Vi har udført følgende arbejdsopgaver:
+\begin{itemize}
+\item{\textbf{Opgave 1:}}
+    Undersøg prisen for en ford transit fra København til Fyn
+\item{\textbf{Opgave 2:}}
+    Bestil en varevogn fra København til Fyn
+\item{\textbf{Opgave 3:}}
+    Ændre returpunktet fra Fyn til Jylland
+\item{\textbf{Opgave 4:}}
+    Slet bestilingen
+\end{itemize}
+
 \section{Elementer i brugergrænsefladen}
 \subsection{Fokus på brugerens opgaver}
 De har en brugercentreret forside, fordi de har valgt at have
@@ -44,9 +41,9 @@ er at reservere/leje biler, og derfor giver det god mening at give netop denne
 funktionalitet meget synlighed. I det aspekt er der fokus på brugerens opgaver
 (Figur \ref{forside}).
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics{1.png}
+    \includegraphics[scale=.6]{1.png}
   \end{center}
   \caption{Forside, reservationsformular.}
   \label{forside}
@@ -56,9 +53,9 @@ En anden opgave en bruger kan have, er muligheden for at annullere en ordre. På
 dette punkt har siden gemt funktionaliteten væk i en underside, der ikke giver
 mening Figur \ref{annullering}.
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=400px]{3.png}
+    \includegraphics[scale=.6]{3.png}
   \end{center}
   \caption{Annullering af ordre gemt væk.}
   \label{annullering}
@@ -69,9 +66,9 @@ Systemets status er relevant når siden henter informationer til brugeren. Når
 applikationen finder ledige biler frem, vises systemets status mens der bliver
 hentet information. Det opfylder kravet om synlighed Figur \ref{status}.
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics{4.png}
+    \includegraphics[scale=.6]{4.png}
   \end{center}
   \caption{Systemets status.}
   \label{status}
@@ -80,9 +77,9 @@ hentet information. Det opfylder kravet om synlighed Figur \ref{status}.
 Siden bruger ikke komplicerede eller tekniske termer til at beskrive bilerne man
 kan leje, men holder derimod sproget i menigmandszonen (Figur \ref{sprog}).
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=400px]{5.png}
+    \includegraphics[scale=.6]{5.png}
   \end{center}
   \caption{Sproget er i menigmandszonen.}
   \label{sprog}
@@ -91,9 +88,9 @@ kan leje, men holder derimod sproget i menigmandszonen (Figur \ref{sprog}).
 Siden viser menupunkter og information i en naturlig orden, hvor det vigtigste
 for brugeren bliver vist først. Se Figur \ref{menu}.
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=400px]{2.png}
+    \includegraphics[width=\textwidth]{2.png}
   \end{center}
   \caption{Menupunkter.}
   \label{menu}
@@ -105,9 +102,9 @@ reservationen. Det er også muligt at slette reservationen når den er blevet
 oprettet (Figur \ref{stadier}).
 
 Stadieoversigten kan dog være svær at få øje på.
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=400px]{9.png}
+    \includegraphics[width=\textwidth]{9.png}
   \end{center}
   \caption{Forskellige stadier af bestillingsprocessen.}
   \label{stadier}
@@ -120,11 +117,11 @@ betyder det samme og forvirrer brugerne.
 \subsection{Error prevention}
 Hvis man indtaster en afleveringsdato der er tidligere end afhentningsdatoen,
 kommer siden med to fejlmeddelelser, hvilket ikke er videre elegant (se Figur
-\ref{fejl_datoer}.
+\ref{fejl_datoer}).
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics{6.png}
+    \includegraphics[scale=.6]{6.png}
   \end{center}
   \caption{Fejlmeddelelse ved forkert indtastning af datoer.}
   \label{fejl_datoer}
@@ -133,17 +130,17 @@ kommer siden med to fejlmeddelelser, hvilket ikke er videre elegant (se Figur
 Når man indtaster kontaktinformation forkert, viser siden de fejlagtige
 indtastninger korrekt (Figur \ref{fejl_boks} og \ref{fejl_kontaktinformation})
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics[width=400px]{7.png}
+    \includegraphics[scale=.6]{7.png}
   \end{center}
   \caption{Fejlboks ved forkert indtastning af kontaktinformation.}
   \label{fejl_boks}
 \end{figure}
 
-\begin{figure}[]
+\begin{figure}[htbp]
   \begin{center}
-    \includegraphics{8.png}
+    \includegraphics[scale=.6]{8.png}
   \end{center}
   \caption{Fejlmeddelelser ved forkert indtastning af kontaktinformation.}
   \label{fejl_kontaktinformation}
