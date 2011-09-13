@@ -1,0 +1,133 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[english]{babel}
+\usepackage[bitstream-charter]{mathdesign}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{Menneske-datamaskine Interaktion\\ Gruppe 61}
+\fancyhead[R]{2011/09/08\\ Øvelse \#1}
+
+
+\begin{document}
+
+\section*{Målelige krav til brugervenlighed af P-automat}
+
+\begin{enumerate}
+\item Automaten skal kunne findes på 30 sekunder.
+\item Automaten må ikke være mere end 30 sekunder væk.
+
+\item Brugeren skal let kunne finde ud af hvordan kortet skal vende.
+\item Brugeren skal kunne se, hvilke mønter der kan bruges.
+
+\item 90\% skal kunne købe en billet i første forsøg.
+\item 80\% skal være i stand til at aflæse priser.
+\item Det skal være tydeligt at se pris og udløbstidspunkt inden billeten
+  købes.
+\item Automaten skal kunne gøre brugeren opmærksom på at brugeren har
+  glemt kortet.
+
+\item Billetten skal tydeligt fremvise udløbstidspunkt, varighed, beløb.
+\item 80\% af ikke dansk-talende talende skal kunne benytte automaten.
+\item 99\% skal kunne købe en billet med den ønskede varighed.
+\item 90\% førstegangsbrugere skal være tilfredse med brugeroplevelsen.
+\item 95\% erfarne brugere skal være tilfredse med brugeroplevelsen.
+\end{enumerate}
+
+\section*{Evaluering}
+
+\begin{enumerate}
+\item {\it Automaten skal kunne findes på 30 sekunder.}
+
+  Automaten var nem at se, fra alle steder i parkeringsområdet, da den
+  stod steder hvor biler ikke kunne blokere for den. 
+
+\item {\it Automaten må ikke være mere end 30 sekunder væk.}
+
+  I parkeringsområdet var der rigeligt med p-automater på begge sider af
+  vejen, så man var aldrig mere end 30 meter væk fra en automat.
+
+\item {\it Brugeren skal let kunne finde ud af hvordan kortet skal vende.}
+
+  Der var en illustrering af et kort der vendte med chippen opad som
+  skulle vise at det var denne vej at kortet skulle vende. Der var dog
+  ikke vist hvilken vej magnetstriben skulle vende. Hvis man indsatte
+  kortet på en forkert led, gav den umiddelbart ingen fejlbesked, men
+  begyndte i stedet transaktionen. Da det fejlede meldte den fejl i
+  transaktionen, men intet nærmere om hvor fejlen befandt sig. Desuden
+  fulgte der med fejlen adskillige høje bib-lyde der ikke just hjalp på
+  forvirringen.   
+
+\item {\it Brugeren skal kunne se, hvilke mønter der kan bruges.}
+  Der var fint markeret med billeder hvilke mønter der kunne bruges. Vi
+  har dog ikke testet mønt-indkastet.
+
+\item {\it 90\% skal kunne købe en billet i første forsøg.}
+
+  I vores sparsomme forsøg lykkedes det for 0\% at købe en billet i
+  første forsøg, men det skyldtes at vi med vilje saboterede processen
+  for at fremprovokere fejl.
+
+\item {\it 80\% skal være i stand til at aflæse priser.}
+
+  Bortset fra nogle forkortelser af ugedagene var det meget nemt af
+  aflæse priser. 
+
+\item {\it Det skal være tydeligt at se pris og udløbstidspunkt inden billeten
+  købes.}
+
+  Det var vidst tydeligt på automatens skærm hvornår billetten galdt
+  til, og hvor mange penge man havde valgt. 
+
+\item {\it Automaten skal kunne gøre brugeren opmærksom på at brugeren har
+  glemt kortet.}
+
+  I tilfælde af at man glemmer sit kort viser skærmen en meddelse der
+  lyder "Fjern Kort", men går ikke yderligere opmærksom på at kortet
+  ikke er taget ud. Dette er ikke optimalt, da billetten bliver
+  udstedt inden man har fjernet kortet, og denne skal tages fra en
+  skuffe længere nede på automaten. Skærmen er placeret i toppen af
+  automaten, og man vil derfor nemt kunne overse denne
+  meddelse. Automaten fik tidligere gjort det meget klart at den kan
+  sige lyde, så en mulig løsning kunne være også at bruge en lyd til
+  at gøre brugeren opmærksom på meddelsen. En anden løsning ville være
+  at billetten ikke blev udstedt før at kortet var fjernet, som man
+  også kan opleve i andre billetautomater. 
+
+\item {\it Billetten skal tydeligt fremvise udløbstidspunkt, varighed, beløb.}
+
+  Billetten viste udløbstidspunkt og beløb (uden gebyr). Den viste ikke
+  varighed, men viste til gengæld også hvornår billetten var udstedt. 
+
+\item {\it 80\% af ikke dansk-talende talende skal kunne benytte automaten.}
+
+  Vi havde ikke nogle ikke engelsk-talende testpersoner, men automaten
+  har en knap med forskellige flag på, der understøttede 5 forskellige
+  sprog. Dog ikke japansk, som faktisk er den 3. største turistgruppe i
+  Danmark.
+  
+
+\item {\it 99\% skal kunne købe en billet med den ønskede varighed.}
+
+  100\% af vores testpersoner fik en billet med den ønskede varighed. Man
+  kan ikke vælge hvor lang tid billetten skal vare, og så betale præcis
+  det, men det er nemt at finde den rigtige varighed ved at prøve
+  sig frem.
+
+\item {\it 90\% førstegangsbrugere skal være tilfredse med brugeroplevelsen.}
+
+  Brugeroplevelsen var god når man ikke lavede fejl, men fejlmeddelserne
+  og de høje lyde udgjorde et noget stressende element i fejlfindings
+  processen.
+
+\item {\it 95\% erfarne brugere skal være tilfredse med brugeroplevelsen.}
+
+  Vi har ikke kunnet teste dette, men som der også står ovenfor er
+  brugeroplevelsen betydeligt bedre når man ikke laver fejl, og chancen
+  for disse fejl mindskes med erfaringen.
+\end{enumerate}
+
+\end{document}
