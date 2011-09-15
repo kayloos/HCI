@@ -1,0 +1,57 @@
+\documentclass[a4paper, 12pt]{article}
+
+% rubber: module bibtex
+% rubber: depend ../litteratur.bib
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish]{babel}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{graphicx}
+%% \usepackage{float}
+%% \usepackage{varioref}
+\usepackage{booktabs}
+\usepackage[footnotesize,margin=1cm]{caption}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{url}
+\usepackage[draft]{fixme}
+
+\newcommand{\oevelsenr}{4}
+\newcommand{\oevelsetitel}{PACT-analyse med interview}
+\newcommand{\afleveringsdato}{6. oktober 2011}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Gruppe 61}
+\fancyhead[R]{\footnotesize Øvelse \oevelsenr}
+\pagestyle{fancy}
+
+\usepackage[style=numeric]{biblatex}
+\addbibresource{../litteratur.bib}
+
+\setdescription{
+  font=\normalfont\itshape,
+  style=sameline,
+  leftmargin=\parindent
+}
+
+\begin{document}
+
+\input{../forside}
+
+\newpage
+\setcounter{page}{1}
+\fancyfoot[C]{\thepage}
+
+\section*{Indledning}
+
+\textcite{benyon10}
+
+
+\clearpage
+\appendix
+
+\printbibliography[heading=bibnumbered,title=Litteraturliste]
+
+\end{document}
