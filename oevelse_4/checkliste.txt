@@ -1,0 +1,23 @@
+Øvelse 4 (aflevering torsdag d. 22)
+
+Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne det endelige site.
+- Vi tester websitet og konceptet, ikke dig. Det er ikke en eksamen. Vi sætter pris på alle dine kommentarer.
+- Hvad er dine internet-færdigheder? Bruger du Internettet ofte? Har du selv et website?
+
+- Anledning:
+  x Hvor tit spiser du ude?
+  x I hvilke anledninger spiser du ude?
+  x Hvornår spiste du ude sidst?
+
+- Brugsmønstre:
+  x Hvordan vælger du steder at spise?
+    o Type, kvalitet, pris, lokation eller stemning?
+  x Hvad er vigtigt når du vælger en restaurant at spise på?
+  x Hvor meget betyder anmeldelser fra f. eks. en avis eller hjemmeside?
+  x Hvad betyder pris ift. dit valg af restaurant?
+  x Hvad forventer du at en restaurationsvurderingshjemmeside indeholder?
+    o Hvad forventer du at den indeholder som det første?
+  x Hvor vigtig er kommunikation med andre brugere af hjemmesiden?
+  x Hvor meget betyder personlige anmeldelser af restauranter?
+  x Hvad ville få dig til at skrive en personlig anmeldelse af en restaurant?
+  x 
