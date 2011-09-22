@@ -20,4 +20,10 @@ Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne 
   x Hvor vigtig er kommunikation med andre brugere af hjemmesiden?
   x Hvor meget betyder personlige anmeldelser af restauranter?
   x Hvad ville få dig til at skrive en personlig anmeldelse af en restaurant?
-  x 
+
+- Kerneopgaver
+
+  * Se reviews af resturanter i et område
+  * Find bestemt restaurent og se reviews/kommentare, stjerner
+  * Skriv review/kommentar for en bestemt restaurent
+  * Giv en restaurent stjerner
