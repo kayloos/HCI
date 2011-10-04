@@ -1,0 +1,60 @@
+Introduktion - udmærket
+
+Bruger internettet en hel del. Søge, yndlingssider/favoritsider, mange andre
+ting. Googler det hun gerne vil finde.
+
+Spiser ude et par gange om måneden.
+
+Ingen bestemte anledninger. Lyst/ikke lyst til at lave mad.
+
+Afhængig af hvor vi er: Hjemme -> nærområde, går sjældent efter de dyre steder.
+
+Forskelligt, nogle gange vil man have et hurtig måltid og andre gange en
+oplevelse.
+
+Hvis vi ser en god anmeldelse indenfor overskuelig afstand, kan vi godt sige der
+spiser vi. Hvis hele familien skal ud at spise, undersøges der på nettet.
+
+Det betyder ikke noget, hvor det er fra. Har ikke været ude for at læse
+brugerkommentarer/anmeldelse.
+
+Vil forvente at den indeholder en beskrivelse af konceptet, hvor ligger
+restauranten rent prismæssigt.
+
+Kommunikation med andre brugere er ikke vigtigt. Mere mund til mund - med
+rigtige personer.
+
+Lægger vægt på at anmeldelsen leverer klare oplysninger. Er køkkenet noget for
+mig?
+
+Hvis jeg bliver meget overrasket, vil jeg skrive en anmeldelse.
+
+Det kunne godt være hun har lyst til at oprette sig som bruger (specielle
+tilbud, rabatter)
+
+I almindelighed vil hun ikke skrive anmeldelser af en restaurant, medmindre det
+er en speciel oplevelse.
+
+
+Papirprototype:
+Forvirret ved forside, da der vises dropdown menuer er der meget mere styr på
+det. Kommer ind på områderesultater hurtigt.
+
+Vil læse "teaser" om hver restaurant. Går efter stjerner.
+
+Restaurantside fint!
+
+Skrive anmeldelse:
+
+Skal søge efter letz sushi. Ved umiddelbart ikke det naturlige trin. Finder ud
+af at søge på navn hurtigt.
+
+Ved godt, hvor anmeldelsen skal skrives.
+
+Overordnet indtryk:
+- Overskueligt og ligetil
+- Logind-boks forvirrende
+- Ved godt hvad restauranter nær os betyder
+
+Kan bedre lide listen end at kortet kommer når man søger efter område.
+
