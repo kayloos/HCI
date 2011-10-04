@@ -1,0 +1,173 @@
+<TeXmacs|1.0.7.7>
+
+<style|article>
+
+<\body>
+  <\hide-preamble>
+    <assign|oevelsenr|<macro|4>>
+
+    <assign|oevelsetitel|<macro|PACT-analyse med interview>>
+
+    <assign|afleveringsdato|<macro|6. oktober 2011>>
+  </hide-preamble>
+
+  <new-page><reset-counter|page> <fancyfoot>[C]<page-the-page>
+
+  <section*|Tjekliste>
+
+  Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil
+  ligne det endelige site.
+
+  <\itemize>
+    <item>Vi tester websitet og konceptet, ikke dig. Det er ikke en eksamen.
+    Vi sætter pris på alle dine kommentarer.
+
+    <item>Hvad er dine internet-færdigheder? Bruger du internettet ofte? Har
+    du selv et website?
+  </itemize>
+
+  <paragraph|Anledning>
+
+  <\itemize>
+    <item>Hvor tit spiser du ude?
+
+    <item>I hvilke anledninger spiser du ude?
+  </itemize>
+
+  <paragraph|Brugsmønstre>
+
+  <\itemize>
+    <item>Hvordan vælger du steder at spise?
+
+    <item>Hvad er vigtigt når du vælger en restaurant at spise på?
+
+    <\itemize>
+      <item>Type, kvalitet, pris, lokation eller stemning?
+    </itemize>
+
+    <item>Hvor meget betyder anmeldelser fra f. eks. en avis eller
+    hjemmeside?
+
+    <item>Hvor meget betyder anmeldelser fra andre brugere?
+
+    <item>Hvad forventer du at en restaurationsvurderingshjemmeside
+    indeholder?
+
+    <item>Hvor vigtig er kommunikation med andre brugere af hjemmesiden?
+
+    <item>Hvad lægger du vægt på i en anmeldelse?
+
+    <item>Hvad ville få dig til at skrive en personlig anmeldelse af en
+    restaurant?
+
+    <item>Hvad ville kunne få dig til at registrere dig som bruger på
+    hjemmesiden? Rabatter, anbefalinger eller andet?
+
+    <item>Ville du gøre brug af at kunne tilkendegive din vurdering af en
+    anmeldelse og hvorfor?
+  </itemize>
+
+  <paragraph|Kerneopgaver>
+
+  <\itemize>
+    <item>Se reviews af resturanter i et område
+
+    <item>Find bestemt restaurant og se reviews/kommentare, stjerner
+
+    <item>Skriv review/kommentar for en bestemt restaurant
+  </itemize>
+
+  <section|Målgrupper><label|sub:Maalgrupper>
+
+  <\itemize>
+    <item>Familier med små børn
+
+    <\itemize>
+      <item>En familie der alle bor sammen og tager ud at spise i fælleskab.
+      De har yngre børn og det er derfor vigtigt for dem at stemningen er
+      god og at det er nemt at komme hen til restauranten.
+    </itemize>
+
+    <item>25-30 årige storby-par uden børn.
+
+    <\itemize>
+      <item>Unge mennesker der har taget en længerevarende uddannelse og har
+      fået gode job og derfor har en sund økonomi og overskud i hverdagen.
+      De har mange kulturelle interesser og vil gerne prøve nye populære
+      restauranter.
+    </itemize>
+
+    <item>Pensionister
+
+    <\itemize>
+      <item>Ældre mennesker der nyder at bruge deres pensionsår på at gå
+      ud på restauranter og lede efter gode tilbud. De har tid til at
+      planlægge deres restaurant-besøg nøje og går efter at få meget
+      værdi for pengene.
+    </itemize>
+
+    <item>Enlige karrierefolk
+
+    <\itemize>
+      <item>Mennesker i de sene 30'ere til de tidlige 50'ere der arbejder
+      meget og har deres karriere som en top-prioritet. De har luft i
+      økonomien, men har ikke megen tid til at lede efter den rigtige
+      restaurant som de skal bruge til arbejdsfrokoster eller lignende.
+    </itemize>
+
+    <item>Studerende
+
+    <\itemize>
+      <item>Unge personer i 20'erne der uddanner sig i eller omkring
+      København. De har ikke særligt mange penge at gøre godt med, og pris
+      er derfor vigtigt for dem. De har desuden inget motoriseret køretøj
+      og ønsker at finde restaurenter i nærheden.
+    </itemize>
+  </itemize>
+
+  <new-page>
+
+  <paragraph|Uddybning af en m�lgruppe: 25-30-�rige storby-par>
+
+  \;
+
+  <printbibliography>[heading=bibnumbered,title=Litteraturliste]
+</body>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|?|?>>
+    <associate|auto-2|<tuple|1|?>>
+    <associate|auto-3|<tuple|2|?>>
+    <associate|auto-4|<tuple|3|?>>
+    <associate|auto-5|<tuple|1|?>>
+    <associate|auto-6|<tuple|4|?>>
+    <associate|sub:Maalgrupper|<tuple|1|?>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Tjekliste>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|6fn>|Anledning
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Brugsmønstre
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.15fn>>
+
+      <with|par-left|<quote|6fn>|Kerneopgaver
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.15fn>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Målgrupper>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>
