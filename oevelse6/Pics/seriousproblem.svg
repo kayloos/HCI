@@ -14,7 +14,7 @@
    inkscape:version="0.48.1 r9760"
    width="24"
    height="24"
-   sodipodi:docname="seriousproblem.png">
+   sodipodi:docname="seriousproblem.svg">
   <metadata
      id="metadata4014">
     <rdf:RDF>
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,25 +57,7 @@
        id="guide4528" />
   </sodipodi:namedview>
   <path
-     sodipodi:type="arc"
      style="fill:#ff9900;fill-opacity:1;stroke:none"
-     id="path4018"
-     sodipodi:cx="-7.3125"
-     sodipodi:cy="10.0875"
-     sodipodi:rx="2.2125001"
-     sodipodi:ry="2.6624999"
-     d="m -5.0999999,10.0875 a 2.2125001,2.6624999 0 1 1 -4.4250002,0 2.2125001,2.6624999 0 1 1 4.4250002,0 z"
-     transform="matrix(5.4237286,0,0,4.5070424,51.661015,-33.464789)" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.70000004999999987;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="M 12,3.1305292 12,15.243006"
-     id="path4530"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:3.70000005;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 12,16.961668 0,3.355484"
-     id="path4532"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cc" />
+     d="M 12 0 C 5.372583 0 0 5.372583 0 12 C 0 18.627417 5.372583 24 12 24 C 18.627417 24 24 18.627417 24 12 C 24 5.372583 18.627417 0 12 0 z M 10.15625 3.125 L 13.84375 3.125 L 13.84375 15.25 L 10.15625 15.25 L 10.15625 3.125 z M 10.15625 16.96875 L 13.84375 16.96875 L 13.84375 20.3125 L 10.15625 20.3125 L 10.15625 16.96875 z "
+     id="path4018" />
 </svg>
