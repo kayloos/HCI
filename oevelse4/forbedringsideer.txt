@@ -1,0 +1,14 @@
+Idèer til forbedringer.
+
+* På forsiden kunne søgeboksen være inde i midten. 
+Det er sidens absolut vigtigste kerneopgave, og Vibeke så de ikke som det første på
+side, men trykkede istedet på den sushi resturant der var under Top-restauranter.
+På de efterfølgende sider bør den stadig være ude til venstre.
+
+* Både et 'Skriv en anmeldelse'-link og en 'Skriv en anmeldelse'-boks 
+på restaurant siden når man er logget ind. 
+Linket skabte lidt forvirring, for hvad sker der når man trykker på linket?
+Når man er logget på behøves linket ikke være der. 
+Når man ikke er logget på bør linket blot henvise til en login boks.
+
+* 
