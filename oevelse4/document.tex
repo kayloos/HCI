@@ -67,9 +67,78 @@ er brugervenligt, og hvad der ikke er.
 Vi afleverede vores tjekliste, prototype og kerneopgaver til vores instruktor,
 og reviderede vores opgave i forhold til de modtagne rettelser.
 
-Dernæst satte vi aftaler op med interviewdeltagere, og foretog løbende
+\subsection{Interviews}
+
+Vi starter hvert interview med at informere interviewdeltagerne om, at vi tester
+systemet og ikke dem. Derefter spørger vi til deres erfaring med internet og
+computere generelt.
+
+Det næste vi så gerne vil finde ud af, er deres forhold til restauranter. Det er
+for at finde ud af, om de overhovedet er typen der går på restuarant, og ville
+kunne gøre brug af siden.
+
+Så spørger vi ind til de valg de foretager sig når de vælger en restaurant,
+hvilke indflydelser de tager seriøst, om de selv ville gøre brug af diverse
+funktionalitet på siden, eksempelvis at skrive en anmeldelse selv --
+empiri der er vigtig for dem der skal designe vores vurderingshjemmeside. 
+
+Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
+opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
+
+Vi satte aftaler op med interviewdeltagere, og foretog løbende
 interviews i et interval på fire dage. Vi sørgede for at tage noter under hvert
 interview, og vælge interviewdeltagere i forskellige målgrupper.
+
+\begin{figure}[htbp]
+  \centering
+  \label{tab:testpersoner}
+  \begin{tabular}{ l l l l l }
+    \textbf{Deltager nr.} & \textbf{Køn}   & \textbf{Alder} & \textbf{Titel} &
+    \textbf{Interneterfaring} \\
+    \hline
+    1            & Kvinde & 21    & Frk.  & Erfaren         \\
+    2            & Kvinde & 54    & Fru.  & Lidt erfaren    \\
+    3            & Kvinde & 75    & Enkefru.  & Begynder    \\
+    4            & Kvinde & 25    & Frk.  & Erfaren         \\
+    5            & Mand   & 56    & Hr.   & Erfaren         \\
+  \end{tabular}
+  \caption{En tabel over testpersoner, der har deltaget i forsøget}
+\end{figure}
+
+\section{PACT-analyse}
+
+\subsection{People}
+
+Brugergrupper:
+\begin{itemize}
+\item Studerende
+\item Forælder
+\item Pensionister
+\item Karrieremennesker
+\item 25--30 årige i et forhold uden børn
+\end{itemize}
+Brugerne har varierende erfaring på nettet.
+
+\subsection{Activities}
+
+\begin{itemize}
+\item Finde en restaurant i nærheden.
+\item Se anmeldelser af nærlæggende restauranter.
+\item Skrive en anmeldelse af en bestemt restaurant.
+\item Give stjerner til en bestemt restaurant.
+\end{itemize}
+
+\subsection{Context}
+
+Brugerne der anvender webstedet vil typisk have god tid, men nogle brugere vil
+være under tidspres. Webstedet vil primært blive brugt hjemme eller på kontoret.
+Brugerne vil typisk bruge siden et par gange om ugen til et par gange om
+måneden.
+
+\subsection{Technologies}
+
+Webstedet kræver en internetbrowser der kører på en almindelig computer, tablet
+eller smartphone.
 
 \section{Interviewresultater}
 \label{sec:Interviewresultater}
@@ -238,16 +307,28 @@ interview, og vælge interviewdeltagere i forskellige målgrupper.
 \end{description}
 
 \subsection{Uddybelse af målgruppen \emph{Karrieremennesker}}
-Det karriereorienterede menneske går ofte på restuarant, både som privatperson eller i forretningsøjemed. Personen kan både være mand eller kvinde, men vil oftest være 30--50 år, og have en god indtjening der giver mulighed for at spise ofte på restaurant uden at skulle tænke over prisen.
+Det karriereorienterede menneske går ofte på restuarant, både som privatperson
+eller i forretningsøjemed. Personen kan både være mand eller kvinde, men vil
+oftest være 30--50 år, og have en god indtjening der giver mulighed for at spise
+ofte på restaurant uden at skulle tænke over prisen.
 
-Det karriere orienterede menneske ønsker at finde gode restauranter hurtigt. Det er vigtigt at restauranterne er gode og præsentable, da de også tit skal bruges til forretningsfrokoster. Derfor forventer hun at man nemt kan se billeder, anmeldelser og en beskrivelse af restuarenterne, som hun vil bruge til at vudere om de passer til den givne frokost. 
+Det karriereorienterede menneske ønsker at finde gode restauranter hurtigt. Det
+er vigtigt at restauranterne er gode og præsentable, da de også tit skal bruges
+til forretningsfrokoster. Derfor forventer hun at man nemt kan se billeder,
+anmeldelser og en beskrivelse af restuarenterne, som hun vil bruge til at
+vurdere om de passer til den givne frokost. 
 
-Denne slags bruger vil næste udelukkende benytte sig af at søge og finde restauranter, fremfor at skrive anmeldelser af restauranter og kommentarer af andres restauranter. Det er fordi hun ikke ser restuarantbesøgene som ren fornøjelse. Hendes restaurantbesøg har som regel et formål; enten at underholde en forretningspartner, eller bare at få et måltid mad når hun ikke selv har tid/overskud til at lave mad. 
+Denne slags bruger vil næste udelukkende benytte sig af at søge og finde
+restauranter, fremfor at skrive anmeldelser af restauranter og kommentarer af
+andres restauranter. Det er fordi hun ikke ser restuarantbesøgene som ren
+fornøjelse. Hendes restaurantbesøg har som regel et formål; enten at underholde
+en forretningspartner, eller bare at få et måltid mad når hun ikke selv har
+tid/overskud til at lave mad. 
 
-Disse brugere vil næsten altid have ret meget erfaring med internettet, som er de eneste forudsætninger for at kunne bruge siden effektivt. De vil også bruge lignende sider til at effektivere andre dele af deres hverdag, som transport, udlandsrejser eller indkøb.
-
-
-
+Disse brugere vil næsten altid have ret meget erfaring med internettet, som er
+de eneste forudsætninger for at kunne bruge siden effektivt. De vil også bruge
+lignende sider til at effektivere andre dele af deres hverdag, som transport,
+udlandsrejser eller indkøb.
 
 \section{Personas}
 \label{sec:Personas}
@@ -257,6 +338,34 @@ Disse brugere vil næsten altid have ret meget erfaring med internettet, som er 
 \section{Scenarier}
 \label{sec:Scenarier}
 
+\subsection{Scenarie 1: Christian Olesen har et vigtigt møde}
+\label{sub:Scenarie 1: Christian Olesen}
+Christian Olesen har en vigtig forretningsaftale. Det betyder meget for
+Christian, at kunden har en kort afstand til restauranten som Christian skal
+vælge at spise på, så de kan starte forretningsmiddagen på god fod. Derfor
+betyder pris heller ikke noget.
+
+Christian vælger at gå ind på siden, for at finde en passende restaurant nær
+kundens placering. Han søger i søgefeltet, og finder de højst vurderede
+restauranter i kundens nærområde, uden hensyn til prisen. Han vælger en
+restaurant med den bedste vurdering og dyreste pris, finder kontaktinformationen
+på siden, og ringer og reserverer plads.
+
+\subsection{Scenarie 2: Malene Lund Ibsen bliver stiktosset}
+\label{sub:Scenarie 2: Malene Lund Ibsen}
+
+Hun har spist på en bestemt sushi-restaurant en gang før og har var tilfreds.
+Men på hende og hendes kærestes årsdag, hvor de spiser på sushi-restauranten
+sammen, finder hun ud af at restauranten har en ret, der næsten indeholder det
+samme som den hun bestilte sidste gang, men kun er halvt så dyr.
+
+Det gør at Malene føler sig snydt, hun synes det er fupmageri at restauranten
+har to næsten identiske retter, men tager mange flere penge for den ene af
+retterne. Derfor går Malene ind på siden, for at skrive en vred anmeldelse. Hun
+søger efter restauranten ved navn, finder den. Der finder hun ud af at hun skal
+oprette en bruger for at skrive en kommentar, så hun opretter en bruger.
+Derefter skriver hun en vred kommentar på restaurantens side, hvor hun giver den
+nul stjerner.
 \section{Testresultater fra prototype}
 \label{sec:Testresultater fra prototype}
 
@@ -268,7 +377,8 @@ Disse brugere vil næsten altid have ret meget erfaring med internettet, som er 
 
 \section{Tjekliste}
 
-Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne det endelige site.
+Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne
+det endelige site.
 \begin{itemize}
 \item Vi tester websitet og konceptet, ikke dig. Det er ikke en
   eksamen. Vi sætter pris på alle dine kommentarer.
