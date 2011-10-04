@@ -1,0 +1,59 @@
+\ProvidesPackage{ex6}[2011/09/21]
+\makeatletter
+
+% Define random macros
+\newcommand{\wcolor}[1]{\color{white}{#1}}
+\newcommand{\good}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/good}\end{center}\end{minipage}}
+\newcommand{\goodidea}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/goodidea}\end{center}\end{minipage}}
+\newcommand{\smallproblem}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/smallproblem}\end{center}\end{minipage}}
+\newcommand{\seriousproblem}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/seriousproblem}\end{center}\end{minipage}}
+\newcommand{\criticalproblem}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/criticalproblem}\end{center}\end{minipage}}
+\newcommand{\filler}{\begin{minipage}{1cm}\begin{center}\includegraphics{Pics/filler}\end{center}\end{minipage}}
+\newcommand{\cskip}{\noalign{\smallskip}\hline\noalign{\smallskip}}
+\newcommand{\vspc}{\vspace{-0.35cm}}
+
+% Define customer and company here. Also define author(s) and the title
+\newcommand{\customer}{Peter Olsen \\ Kolding Kommune}
+
+% Define frontpage layout
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
+\def\maketitle{%
+  \null
+  \thispagestyle{empty}%
+  \vskip 1cm
+  \hrule height 8pt
+  \vskip 2cm
+  \par
+  \begin{flushleft}
+    \Huge \strut \@title \par
+  \end{flushleft}
+  \vskip 1cm
+  \hrule height 2pt
+  \par
+  \vfil
+  \vfil
+  \vskip 4cm
+  \begin{flushleft}
+    \normalfont\Large Udarbejdet for \customer
+  \end{flushleft}
+  \vskip 2cm
+  \begin{flushleft}
+    \normalfont\Large\@date
+  \end{flushleft}
+  \vskip 2cm
+  \begin{flushleft}
+  \normalfont\normalsize\ Udarbejdet af \@author
+  \end{flushleft}
+  \null
+  \cleardoublepage
+  }
+% Force latex to include the appendiks in the header.
+\newcommand\appendix@section[1]{%
+  \refstepcounter{section}%
+  \orig@section*{Appendiks \@Alph\c@section: #1}%
+  \addcontentsline{toc}{section}{Appendiks \@Alph\c@section: #1}%
+}
+\let\orig@section\section
+\g@addto@macro\appendix{\let\section\appendix@section}
+
+\makeatother

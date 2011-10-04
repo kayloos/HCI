@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   width="24"
+   height="24"
+   sodipodi:docname="smallproblem.pdf">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="776"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="10.832513"
+     inkscape:cx="11.461913"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="fill:#0000ff;fill-opacity:1;stroke:none"
+     d="M 12 0 C 7.2465191 -1.6987775e-15 3.130541 2.7728684 1.1875 6.78125 L 22.8125 6.78125 C 20.869459 2.7728684 16.753483 0 12 0 z M 0.375 9.0625 C 0.13621989 10.006694 0 10.981606 0 12 C 0 13.007824 0.14099873 13.970942 0.375 14.90625 L 23.625 14.90625 C 23.859001 13.970942 24 13.007824 24 12 C 24 10.981606 23.86378 10.006694 23.625 9.0625 L 0.375 9.0625 z M 1.1875 17.1875 C 3.1255074 21.209519 7.2365452 24 12 24 C 16.763457 24 20.874493 21.209519 22.8125 17.1875 L 1.1875 17.1875 z "
+     id="path3755" />
+</svg>

@@ -1,0 +1,162 @@
+% This is a template of the report proposed used for the fourth mandatory exercise on the HCI course at DIKU 2011.
+% The template is an approximately direct translation of the original report produced and published by Rolf Molich, www.dialogdesign.dk
+% The template is only partial - only selected portions of the original template is included to show it "works". The rest can be synthesized.
+% The template probably contains some redundant definitions or other stuff - Remove, update, improve as you see fit.
+%
+% This file comes in a zip file called ex6-template-tex.zip. The content of the zip file is:
+% ex6-template.tex - The main file.
+% ex6.sty - A style file for the frontpage and definitions. Must be included on the tex search path/same dir as ex6-template.tex.
+% Pics/ - A directory containing 8 smallish PNG files used for compiling this file.
+%
+% The template was created by Casper Petersen.
+
+\documentclass[10pt,a4paper]{article}      % Book.cls is also usable
+\usepackage[utf8]{inputenc}                % UTF8 encoding
+\usepackage[T1]{fontenc}                   % Default fonttype and style
+\usepackage[danish]{babel}                 % Danish hyphenation pattern
+\usepackage{charter}                       % Font type - Can be removed.
+\usepackage{graphicx}                      % For graphics
+\usepackage{subfig}                        % For subfigures - Can be removed and replaced with standard figures
+%% \usepackage{a4wide}                        % Gives us a bit extra spaces in the margins - Can be removed.
+\usepackage{color, colortbl}               % Use to define colors and give tables a colored background
+\usepackage{fancyhdr}                      % Fancy headers? Yes please.
+\usepackage{ex6}                           % Separate form and function plus ugly tex code
+\usepackage{tikz}
+\author{StuderendeA, StuderendeB, StuderendeC}
+\title{Test af brugervenlighed af www.koldingkom.dk}
+\date{Oktober 2011}
+\begin{document}
+\hbadness=10000
+\hfuzz=50pt
+\maketitle
+\newpage
+
+% Define the pagestyle we are going to be using
+\pagestyle{fancy}
+\lhead{Test af brugervenlighed af websted}
+\chead{}
+\rhead{Kolding Kommune}
+\lfoot{Oktober 2011}
+\cfoot{}
+\rfoot{Side \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\section*{Resumé}
+\setcounter{page}{1} % sets the current page number to 32
+\addcontentsline{toc}{section}{Resumé}
+\noindent Kolding Kommune tilbyder information om kommunen på www.koldingkom.dk. Webstedet blev lanceret i december 2002. DialogDesign  har gennemført en test af brugervenlighed af webstedet den 12. og 13-03-2003.\newline
+
+\noindent Formålet med testen er at finde og beskrive problemer i dialogen mellem typiske brugere og Kolding Kommunes websted, samt at foreslå velgennemprøvede forbedringsforslag som løser de påpegede problemer.\newline
+
+\noindent Testen er foretaget ved at bede otte personer om at løse typiske opgaver på webstedet under kyndig overvågning. Denne rapport beskriver de positive forhold og de problemer som testen har afsløret.\newline
+
+\noindent De væsentligste punkter hvor webstedet fungerer godt:
+\begin{itemize}
+  \item \textbf{Indholdet er godt}\\ Testdeltagerne var imponerede og overraskede over de store mængder nyttigt indhold på webstedet. Sproget er godt, og testdeltagerne fandt ingen sproglige fejl.
+  \item \textbf{Navigation}\\ Navigationen fungerer i det store og hele godt. Testdeltagerne udnyttede effektivt samspillet mellem menuen i venstre side og Mere om boksene i højre side.
+  \item \textbf{Svartiderne er gode}
+\end{itemize}
+
+De væsentligste punkter hvor webstedet kan fungere endnu bedre:
+\begin{itemize}
+  \item \textbf{Søgefunktionen}\\
+  Anbefalinger til forbedring af søgefunktionen:
+  \begin{itemize}
+    \item Find de 100-200 søgeord som brugerne synes er vigtigst, ved at analysere søgeord. Giv disse søgeord særbehandling, så de altid fører til et ``perfekt'' søgeresultat.
+    \item Giv en konstruktiv meddelelse hvis en søgning ikke giver nogen resultater.
+    \item Udelad protokoller, mødereferater, intranetsider og lignende fra standard-søgningen.
+    \item Vis den sammenhæng hvori søgeordet optræder, for hvert søgeresultat. Fremhæv søgeordet.
+  \end{itemize}
+  \item \textbf{Integration med Netborger.dk}\\
+  Netborger skal integreres bedre med Kolding Kommunes websted. Se afsnit 9.
+  \item \textbf{Effektivitet}\\
+  Gør genveje og indeks mere synlige. Tilbyd en kort introduktion til webstedet. Se afsnit 3.
+\end{itemize}
+
+\noindent Rolf Molich\\
+\noindent DialogDesign\\
+\noindent April 2003
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Kategorier af kommentarer}
+Testdeltagernes kommentarer er klassificeret i følgende kategorier:
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{p{0.1\textwidth}p{0.8\textwidth}}\hline
+& \\
+\vspc\good            & Godt. Denne måde at gøre tingene på syntes testdeltagerne godt om. Den kan tjene som forbillede for andre.\\
+& \\
+\vspc\goodidea        & God idé. Et forslag fra en testdeltager eller testlederen, som kan medføre en væsentlig forbedring af brugeroplevelsen.\\
+& \\
+\vspc\smallproblem    & Mindre problem. Testdeltagerne studsede et kort øjeblik.\\
+& \\
+\vspc\seriousproblem  & Alvorligt problem. Problemet forsinkede testdeltagerne i 1-5 minutter, men testdeltagerne kom videre af sig selv. Gav
+                        lejlighedsvis anledning til katastrofer.\\
+& \\
+\vspc\criticalproblem & Kritisk problem. Gav anledning til hyppige katastrofer. En katastrofe er en situation, hvor webstedet ``vandt'' over
+                        testdeltagerne, dvs. en situation som forhindrede testdeltagerne i at løse en rimelig arbejdsopgave på webstedet, eller som irriterede testdeltagerne voldsomt.\\\noalign{\smallskip}\hline
+\end{tabular}
+\caption{Kategori symboler anvendt i denne rapport}
+\label{tab:gt}
+\end{table}%
+\newpage
+\section{Forsiden}
+
+\begin{figure}%
+\centering
+\subfloat[][\textbf{Forsiden på Kolding Kommunes websted}. Nogle testdeltagerne syntes ikke, at denne side lignede en rigtig forside.]{
+\includegraphics[scale=0.5]{Pics/frontpage}
+}%
+\qquad
+\subfloat[][\textbf{Websiden Kommunen}. Nogle testdeltagere troede, at denne side var webstedets forside, fordi den ``ligner'' en forside, og fordi linket Kommunen i venstremenuen altid er nemt tilgængeligt.]{
+\includegraphics[scale=0.5]{Pics/kommune}
+}
+\caption{Here are the first two figures of a continued figure.}%
+\label{fig:cont}%
+\end{figure}
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{p{0.1\textwidth}p{0.8\textwidth}}
+& \\
+\vspc\smallproblem& \textbf{De direkte link til webstedets forside er usynlige}.\\
+& Ingen testdeltagere vidste, at de kunne komme til forsiden ved at klikke på kommunens segl i øverste venstre hjørne, selv om dette er en udbredt konvention. Kun nogle få testdeltagere fik øje på linket \emph{Forside} i menulinien øverst i billedet.\newline
+
+Det havde den konsekvens, at mange testdeltagere opfattede siden \emph{Kommunen} som forsiden, fordi linket til denne side er meget synligt (øverst i menuen i venstre side). Nogle testdeltagere brugte Back-knappen for at komme tilbage til forsiden og andre valgte at indtaste URL'en.\\
+& \\
+\vspc\smallproblem & \textbf{Topmenuen er usynlig}.\\
+& Kun nogle få testdeltagere så topmenuen. De testdeltagere, som fik øje på den, kritiserede funktionerne for at være mindre relevante, bortset fra \emph{Forside}.\newline
+
+Testleders kommentar: Topmenuen går i ét med billedfrisen. Separér dem.
+Flyt f.eks. følgende funktioner til topmenuen: \emph{Forside}, \emph{Vigtige telefonnumre}, \emph{Åbningstider}, \emph{Søg}, \emph{Genveje}, \emph{Indeks} (dvs. sitemap).
+\end{tabular}
+\end{table}%
+
+
+\clearpage
+\appendix
+
+\section{Testdeltagernes opgaveløsning}
+
+\begin{table*}[!htp]
+\begin{center}
+\label{tbl: oversigt}
+\small
+\begin{tabular}{lccccccccc}
+\rowcolor{black}
+  \wcolor{Opgave/deltager}     & \wcolor{1}           & \wcolor{2} & \wcolor{3}    & \wcolor{4}       & \wcolor{5} & \wcolor{6}       & \wcolor{7} & \wcolor{8}\\\hline\noalign{\smallskip}
+  Find webstedet               & \filler & \good      & \good      & \filler       & \smallproblem    & \good      & \good            & \good\\\cskip
+  Gentag tidligere opgave      & \good   & \good      & \good      & \smallproblem & \smallproblem    & \filler    & \filler          & \filler\\\cskip
+  Nyt job                      & \filler & \good      & \good      & \filler       & \seriousproblem  & \good      & \good            & \filler\\\cskip
+  Rådhus, telf nr., åbningstid & \filler & \good      & \good      & \filler       & \good            & \good      & \good            & \filler\\\cskip
+  Oversigt over læger          & \filler & \good      & \good      & \filler       & \criticalproblem & \filler    & \criticalproblem & \filler\\\cskip
+\end{tabular}
+\caption{Oversigt over testdeltagernes opgaveløsning.}
+\end{center}
+\end{table*}
+\end{document} 
