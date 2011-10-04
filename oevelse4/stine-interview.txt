@@ -1,0 +1,35 @@
+tilstedeværende: kasper, budde, stine
+
+Spørgsmål
+
+1. nej 
+
+2. 1½ måneds tid siden
+
+3. noget jeg har hørt om, eller læst om, eller nettet. Jeg leder efter via priser, typer og primært beligenhed
+
+4. 
+
+5. det kan gøre udslaget til hvor jeg tager hen, men er ikke altafgørende
+
+6. prisen betyder meget i forhold til valg
+
+7. en oversigt over resturanter, og vuderinger af dem.
+
+8. 
+
+9. meget ligeglad med andres anmeldelser, har ikke noget behov for at snakke med andre brugere
+
+Siden
+
+task 1: brugte menufelter og søgefelt sammen til at finde resturanter med sushi i nærheden.
+Derefter gav hun op og trykkede på kortet. Derfra gik hun ind på Letz Sushi.
+
+task 2: Hun loggede ind først. Derefter ville hun trykke. Brugte søgefeltet til at søge efter Letz Sushi.
+og skrev reviewet.
+
+
+Hun ville gerne kunne integere mere med kortet. 
+På en enkelresturant leder hun efter prisleje, type af resturant, og nogen ord om stemningen.
+Stjerner indenfor hver katagori i stedet og ikke kun samlet.
+Billeder betyder ikke for meget.
