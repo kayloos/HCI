@@ -16,6 +16,7 @@
 \usepackage{subfig}
 \usepackage{url}
 \usepackage[draft]{fixme}
+\usepackage{wrapfig}
 
 \newcommand{\oevelsenr}{4}
 \newcommand{\oevelsetitel}{PACT-analyse med interview}
@@ -112,6 +113,8 @@ empiri der er vigtig for dem der skal designe vores vurderingshjemmeside.
 
 Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
 opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
+
+Vores tjekliste vi brugte til interviewene kan findes i Appendix~\ref{appx:tjekliste}.
 
 \section{PACT-analyse}
 
@@ -334,7 +337,7 @@ Vi har identificeret følgende kerneopgaver:
 \item Find restaurant der opfylder brugerens kriterier.
 \item Find anmeldelser af en restaurant.
 \item Anmeld en restaurant.
-\item Find oplysninger om en bestemt restaurant.
+\item Find oplysninger om en bestemt restaurant. {\small (\emph{Denne kerneopgaver er tilføjet efter interviewene})}
 \end{itemize}
 
 \section{Målgruppebeskrivelser}
@@ -404,6 +407,12 @@ udlandsrejser eller indkøb.
 \label{sec:Personas}
 
 \subsection{Christian Olesen}
+
+\begin{wrapfigure}{r}{3cm}
+  \includegraphics[width=\linewidth]{christian}\\
+  {\scriptsize Tager fra Flickr bruger MyTudut}
+\end{wrapfigure}
+
 Christian er 39 år og bor på Østerbro. Han arbejder som key account manager hos
 et større forsikringsselskab. En af han primære opgave er at varetage de større
 kunders forsikringer og forbedre deres aftaler med firmaet. Dette involverer
@@ -424,6 +433,12 @@ Foruden hans personlige behov, bruger han også internettet når han skal finde
 steder han kan invitere kunder til forretningsfrokost. 
 
 \subsection{Malene Lund Ibsen}
+
+\begin{wrapfigure}{r}{3cm}
+  \includegraphics[width=\linewidth]{marlene}\\
+  {\scriptsize Tager fra Flickr bruger StephenMcleod}
+\end{wrapfigure}
+
 Malene er 23 år og bor på Amager. Hun studerer dansk på Københavns Universitet
 har et studiejob på det lokale bibliotek. Hun kan godt lide god mad; både selv
 at lave det, men også at spise det på restuarant. Grundet hendes begrænsede
@@ -521,6 +536,7 @@ Det var en fordel at vi havde lavet en papirprototype. Det lod os skabe en glide
 \appendix
 
 \section{Tjekliste}
+\label{appx:tjekliste}
 
 Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne
 det endelige site.
@@ -564,6 +580,7 @@ og hvorfor?
 \end{itemize}
 
 \section{Prototype}
+\label{appx:prototype}
 
 \begin{figure}[hp]
   \centering
@@ -608,6 +625,27 @@ og hvorfor?
   \centering
   \fbox{\includegraphics[width=0.9\textwidth, trim=0 200 0 0]{mockup/page5.pdf}}
   \caption{Siden der vises når søgningen returnerer nul resultater.}
+\end{figure}
+
+
+\section{Kommentarer}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tabular}{ c | c c c c }
+    \midrule
+    \textbf{Brugt tid på} & \textbf{Micheal}   & \textbf{Niels} & \textbf{Claus} & \textbf{Kasper}
+    \midrule
+    Udarbejde af interview  & 2½  & 2½  & 2½  & 2 \\
+    Udførsel af interviews  & 5½  & 5   & 5   & 5 \\
+    Udarbejde af rapport    & 8   & 8   & 7   & 8 \\
+    Prototype               & 3   & 3   & 4   & 3 \\
+    \midrule
+    I alt                   & 19  & 18½ & 18½ & 18 \\
+    \midrule
+  \end{tabular}
+  \caption{En tabel over vores tidforbrug}
+  \label{tab:tidsforbrug}
 \end{figure}
 
 \printbibliography[heading=bibnumbered,title=Litteraturliste]
