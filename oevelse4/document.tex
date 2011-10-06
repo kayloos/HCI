@@ -16,6 +16,7 @@
 \usepackage{subfig}
 \usepackage{url}
 \usepackage[draft]{fixme}
+\usepackage{wrapfig}
 
 \newcommand{\oevelsenr}{4}
 \newcommand{\oevelsetitel}{PACT-analyse med interview}
@@ -406,6 +407,12 @@ udlandsrejser eller indkøb.
 \label{sec:Personas}
 
 \subsection{Christian Olesen}
+
+\begin{wrapfigure}{r}{3cm}
+  \includegraphics[width=\linewidth]{christian}\\
+  {\scriptsize Tager fra Flickr bruger MyTudut}
+\end{wrapfigure}
+
 Christian er 39 år og bor på Østerbro. Han arbejder som key account manager hos
 et større forsikringsselskab. En af han primære opgave er at varetage de større
 kunders forsikringer og forbedre deres aftaler med firmaet. Dette involverer
@@ -426,6 +433,12 @@ Foruden hans personlige behov, bruger han også internettet når han skal finde
 steder han kan invitere kunder til forretningsfrokost. 
 
 \subsection{Malene Lund Ibsen}
+
+\begin{wrapfigure}{r}{3cm}
+  \includegraphics[width=\linewidth]{marlene}\\
+  {\scriptsize Tager fra Flickr bruger StephenMcleod}
+\end{wrapfigure}
+
 Malene er 23 år og bor på Amager. Hun studerer dansk på Københavns Universitet
 har et studiejob på det lokale bibliotek. Hun kan godt lide god mad; både selv
 at lave det, men også at spise det på restuarant. Grundet hendes begrænsede
@@ -503,6 +516,13 @@ restaurantsiden hvor de kunne skrive reviewet.
 \item[\smallprob] Vi havde troet at deltagerne ville søge på navnet af restauranten, men flere af deltagerne brugte samme metode som opgaven før, med at søge på bydel og køkken i stedet. Dette fungerede også, men tog en del flere kig og et sideskift ekstra.
 \end{itemize}
 
+\subsection{Andet}
+\begin{itemize}
+  \item[\goodidea] Deltager 3 foreslog at der skulle være punktkrav til når man skriver en anmeldelse. Hendes kritikpunkt var at der ofte er mange useriøse eller dårligt skrevede kommentarer, og at man kunne tvinge de brugere der valgte at skrive kommentarer til at følge et bestemt format. For eksempel, kunne man opdele anmeldelsen i flere dele, så de skulle vurdere kvalitet, stemning og service hver for sig. Det ville betyde at man havde et minimumskrav til, hvad man godtager, og vil forhåbentlig resultere i en højere kvalitet af anmeldelser
+
+  \item[\good] Vores fejlmeddelelser blev vel modtaget. Deltagerne kunne godt forstå, hvad der var gået galt, og hvilke trin de skulle foretage sig for at rette op på fejlen.
+\end{itemize}
+
 
 \section{Erfaringer}
 \label{sec:Erfaringer}
@@ -513,6 +533,8 @@ Med hensyn til interviews har vi lært meget. Selve det at skulle udføre interv
 
 Under interviewdelen er vi blevet klogere på formuleringen af vores spørgsmål. 
 Da i vores spørgsmål om hvordan man kunne få brugeren til at melde sig på sådan en side nævnte vi ordet rabatter i spørgsmålet. Dette har vi erfaret er for ledene og har korupteret vores interviewresultater.
+
+Det var en fordel at vi havde lavet en papirprototype. Det lod os skabe en glidende overgang mellem interview og test af prototypen, da vi ikke skulle til at introducere en computer. Desuden gjorde papirformen det klart, at det var en prototype, fordi man naturligvis ikke kan forvente at papiret opfører sig som en rigtig hjemmeside.
 
 \clearpage
 \appendix
@@ -609,22 +631,22 @@ og hvorfor?
   \caption{Siden der vises når søgningen returnerer nul resultater.}
 \end{figure}
 
-
+\clearpage
 \section{Kommentarer}
 
 \begin{figure}[htbp]
   \centering
-  \begin{tabular}{ c | c c c c }
+  \begin{tabular}{l c c c c}
+    \toprule
+    \textbf{Brugt tid på} & {Michael}   & {Niels} & {Claus} & {Kasper} \\
     \midrule
-    \textbf{Brugt tid på} & \textbf{Micheal}   & \textbf{Niels} & \textbf{Claus} & \textbf{Kasper}
-    \midrule
-    Udarbejde af interview  & 2½  & 2½  & 2½  & 2 \\
-    Udførsel af interviews  & 5½  & 5   & 5   & 5 \\
+    Udarbejde af interview  & 2,5  & 2,5  & 2,5  & 2 \\
+    Udførsel af interviews  & 5,5  & 5   & 5   & 5 \\
     Udarbejde af rapport    & 8   & 8   & 7   & 8 \\
     Prototype               & 3   & 3   & 4   & 3 \\
     \midrule
-    I alt                   & 19  & 18½ & 18½ & 18 \\
-    \midrule
+    I alt                   & 19  & 18,5 & 18,5 & 18 \\
+    \bottomrule
   \end{tabular}
   \caption{En tabel over vores tidforbrug}
   \label{tab:tidsforbrug}
