@@ -36,7 +36,7 @@
   leftmargin=\parindent
 }
 
-\newcommand\pic[1]{\includegraphics[trim=0 5 0 0, scale=.8]{../oevelse6/Pics/#1}}
+\newcommand\pic[1]{\includegraphics[trim=0 4.7 -10 0, scale=.8]{../oevelse6/Pics/#1}}
 \newcommand\goodidea{\pic{goodidea}}
 \newcommand\good{\pic{good}}
 \newcommand\serious{\pic{seriousproblem}}
@@ -94,9 +94,6 @@ hvilke indflydelser de tager seriøst, om de selv ville gøre brug af diverse
 funktionalitet på siden, eksempelvis at skrive en anmeldelse selv --
 empiri der er vigtig for dem der skal designe vores vurderingshjemmeside. 
 
-Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
-opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
-
 \begin{figure}[htbp]
   \centering
   \begin{tabular}{ l l l l l }
@@ -109,11 +106,14 @@ opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
     4            & Kvinde & 21    & Studerende          & Erfaren         \\
     5            & Kvinde & 75    & Pensioneret rektor  & Begynder        \\
   \end{tabular}
-  \caption{En tabel over testpersoner, der har deltaget i forsøget}
+  \caption{En tabel over testpersoner, der har deltaget i forsøget.}
   \label{tab:testpersoner}
 \end{figure}
 
+Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
+opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
 
+Vores tjekliste vi brugte til interviewene kan findes i Appendix~\ref{appx:tjekliste}.
 
 \section{PACT-analyse}
 
@@ -140,10 +140,11 @@ Brugerne har varierende erfaring på nettet.
 
 \subsection{Context}
 
-Brugerne der anvender webstedet vil typisk have god tid, men nogle brugere vil
-være under tidspres. Webstedet vil primært blive brugt hjemme eller på kontoret.
-Brugerne vil typisk bruge siden et par gange om ugen til et par gange om
-måneden.
+Brugerne der anvender webstedet vil typisk have god tid, men nogle
+brugere vil være under tidspres efter at finde en
+restaurant. Webstedet vil primært blive brugt hjemme eller på
+kontoret.  Brugerne vil typisk bruge siden et par gange om ugen til et
+par gange om måneden.
 
 \subsection{Technologies}
 
@@ -253,7 +254,7 @@ Deltagerne 2, 3, 4 og 5 sagde at anmeldelser havde en indflydelse på hvor de va
   %%       spiser vi. Hvis hele familien skal ud at spise, undersøges der på nettet.
 
 
-\subsection{Generelle forventinger til en restaurantvurderingshjemmeside}
+\subsection{Generelle forventninger til siden}
 
 Det var et gennemgående træk hos alle interviewdeltagere, at de var forbeholdne
 over for idéen om at oprette sig som bruger. Da vi spurgte ind til ting der
@@ -329,12 +330,13 @@ restauranten.
   %%   Vibeke: Hvis jeg bliver meget overrasket, vil jeg skrive en anmeldelse.
 
 \section{Kerneopgaver}
-\label{sec:Kerneopgaver}
+
+Vi har identificeret følgende kerneopgaver:
 \begin{itemize}
-\item Se reviews af resturanter i et område
-\item Se reviews af restauranter for en bestemt køkkentype
-\item Find bestemt restaurant og se reviews/kommentare, stjerner
-\item Skriv review/kommentar for en bestemt restaurant
+\item Find restaurant der opfylder brugerens kriterier.
+\item Find anmeldelser af en restaurant.
+\item Anmeld en restaurant.
+\item Find oplysninger om en bestemt restaurant. {\small (\emph{Denne kerneopgaver er tilføjet efter interviewene})}
 \end{itemize}
 
 \section{Målgruppebeskrivelser}
@@ -376,7 +378,7 @@ restauranten.
     køretøj og ønsker at finde restauranter i nærheden.
 \end{description}
 
-\subsection{Uddybelse af målgruppen \emph{Karrieremennesker}}
+\subsection{Uddybelse af målgruppen Karrieremennesker}
 Det karriereorienterede menneske går ofte på restuarant, både som privatperson
 eller i forretningsøjemed. Personen kan både være mand eller kvinde, men vil
 oftest være 30--50 år, og have en god indtjening der giver mulighed for at spise
@@ -473,36 +475,32 @@ hun giver den nul stjerner.
 \section{Testresultater fra prototype}
 \label{sec:Testresultater fra prototype}
 
-\begin{itemize}
-\item Se reviews af resturanter i et område
-\item Se reviews af restauranter for en bestemt køkkentype
-\item Find bestemt restaurant og se reviews/kommentare, stjerner
-\item Skriv review/kommentar for en bestemt restaurant
-\end{itemize}
-
-\subsection{Se reviews af resturanter i et område}
-\begin{itemize}
-\item[\good] ``Restuaranter nær dig'' og kortet i højre side af skærmen fik ros af de fleste interviewdeltagere. De forstod også intuitivt funktionaliteten af kortet selvom det var en meget grov mock-up.
-\item[\goodidea] Flere nævnte også kortet som værende smart hvis man lavede en app-version af siden til smartphones med GPS. Så kunne ``Top Restauranter'' også tilpasses den bydel man befandt sig i.
-\end{itemize}
-
-\subsection{Se reviews af restauranter for en bestemt køkkentype}
+\subsection{Find restaurant der opfylder nogle kriterier}
 \begin{itemize}
 \item[\good] Opdelingen af søgekriterier i søgefeltet var forståeligt for alle deltagere.
-\item[\smallprob] Flere af deltagerne kiggede først på listen over ``Top Restuaranter'' efter noget passende, frem for at bruge søgeboksen. 
+\item[\good] ``Restuaranter nær dig'' og kortet i højre side af skærmen fik ros af de fleste interviewdeltagere. De forstod også intuitivt funktionaliteten af kortet selvom det var en meget grov mock-up.
+\item[\goodidea] Flere nævnte også kortet som værende smart hvis man lavede en app-version af siden til smartphones med GPS. Så kunne ``Top Restauranter'' også tilpasses den bydel man befandt sig i.
+\item[\smallprob] Flere af deltagerne kiggede først på listen over ``Top Restuaranter'' efter noget passende, frem for at bruge søgeboksen.
 \end{itemize}
 
-\subsection{Find bestemt restaurant og se reviews/kommentarer, stjerner}
+\subsection{Find anmeldelser af en restaurant}
 \begin{itemize}
+\item[\smallprob] På vores papirprototype var det ikke helt tydeligt hvad der var links og hvad der bare var tekst. Der var flere der tøvede da de så deres søgeresultater, da de ikke umiddelbart vidste hvor de skulle trykke.
 \end{itemize}
 
-\subsection{Skriv review/kommentar for en bestemt restaurant}
+\subsection{Anmeld en restaurant}
 \begin{itemize}
-\item Det første samtlige brugere gjorde efter at have fået stilt dette spørgsmål
-var at logge ind. Dette overraskede os da vi havde forventet at folk ville glemme
-dette. Derefter begyndte de dog at have problemer da mange af dem ville ind under
-"mine reviews" for at skrive et review. Det lykkes dog dem alle til sidst at finde
+\item[\smallprob] Det første samtlige brugere gjorde efter at have fået stilt en opgave af dene art
+var at logge ind. Dette overraskede os da vi havde forventet at folk ville overse dette. Derefter begyndte de dog at have problemer da mange af dem ville ind under
+"Mit Reviewr" for at skrive et review. Det lykkes dog dem alle til sidst at finde
 restaurantsiden hvor de kunne skrive reviewet.
+\item[\smallprob] To af deltagerne fandt det forvirrende at der på restuarantsiden, når man var logget ind, både var et link til ``Skriv en anmeldelse'', og en boks til at skrive anmeldelsen i længere nede på siden.  
+\end{itemize}
+
+\subsection{Find oplysninger om en bestemt restaurant}
+\begin{itemize}
+\item[\good] Det lykkedes alle brugerne at finde frem til en bestemt restuarant ved brug af søgeboksen til venstre.
+\item[\smallprob] Vi havde troet at deltagerne ville søge på navnet af restauranten, men flere af deltagerne brugte samme metode som opgaven før, med at søge på bydel og køkken i stedet. Dette fungerede også, men tog en del flere kig og et sideskift ekstra.
 \end{itemize}
 
 
@@ -516,6 +514,7 @@ Med hensyn til interviews har vi lært meget. Selve det at skulle udføre interv
 \appendix
 
 \section{Tjekliste}
+\label{appx:tjekliste}
 
 Du vil komme til at prøve en tidlig test-udgave (prototype) som ikke vil ligne
 det endelige site.
@@ -559,49 +558,50 @@ og hvorfor?
 \end{itemize}
 
 \section{Prototype}
+\label{appx:prototype}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page1.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 0 60 0]{mockup/page1.pdf}}
   \caption{Forsiden for vores prototype.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page2.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth]{mockup/page2.pdf}}
   \caption{Siden der vises når man søger på restauranter ved hjælp af
     søgefunktionaliteten på forsiden.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page7.pdf}
-  \caption{Siden der vises man klikker på det lille kort på forsiden.}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 200 0 0]{mockup/page7.pdf}}
+  \caption{Siden der vises når man klikker på det lille kort på forsiden.}
 \end{figure}
 
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page3.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 0 0]{mockup/page3.pdf}}
   \caption{Siden for en enkelt restaurant.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page6.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 0 0]{mockup/page6.pdf}}
   \caption{Siden for en enkelt restaurant når man er logget ind.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page4.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 60 0]{mockup/page4.pdf}}
   \caption{Forsiden med en fejlmeddelelse fordi brugeren har indtastet
     forkert brugernavn eller løsen.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page5.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 200 0 0]{mockup/page5.pdf}}
   \caption{Siden der vises når søgningen returnerer nul resultater.}
 \end{figure}
 
