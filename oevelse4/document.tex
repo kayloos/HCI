@@ -36,7 +36,7 @@
   leftmargin=\parindent
 }
 
-\newcommand\pic[1]{\includegraphics[trim=0 4.7 0 0, scale=.8]{../oevelse6/Pics/#1}}
+\newcommand\pic[1]{\includegraphics[trim=0 4.7 -10 0, scale=.8]{../oevelse6/Pics/#1}}
 \newcommand\goodidea{\pic{goodidea}}
 \newcommand\good{\pic{good}}
 \newcommand\serious{\pic{seriousproblem}}
@@ -94,9 +94,6 @@ hvilke indflydelser de tager seriøst, om de selv ville gøre brug af diverse
 funktionalitet på siden, eksempelvis at skrive en anmeldelse selv --
 empiri der er vigtig for dem der skal designe vores vurderingshjemmeside. 
 
-Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
-opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
-
 \begin{figure}[htbp]
   \centering
   \begin{tabular}{ l l l l l }
@@ -109,11 +106,12 @@ opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
     4            & Kvinde & 21    & Studerende          & Erfaren         \\
     5            & Kvinde & 75    & Pensioneret rektor  & Begynder        \\
   \end{tabular}
-  \caption{En tabel over testpersoner, der har deltaget i forsøget}
+  \caption{En tabel over testpersoner, der har deltaget i forsøget.}
   \label{tab:testpersoner}
 \end{figure}
 
-
+Til sidst debriefer vi deltagerne ved at spørge dem om deres generelle
+opfattelse af siden, og om de har nogle ting de synes var gode eller dårlige.
 
 \section{PACT-analyse}
 
@@ -140,10 +138,11 @@ Brugerne har varierende erfaring på nettet.
 
 \subsection{Context}
 
-Brugerne der anvender webstedet vil typisk have god tid, men nogle brugere vil
-være under tidspres. Webstedet vil primært blive brugt hjemme eller på kontoret.
-Brugerne vil typisk bruge siden et par gange om ugen til et par gange om
-måneden.
+Brugerne der anvender webstedet vil typisk have god tid, men nogle
+brugere vil være under tidspres efter at finde en
+restaurant. Webstedet vil primært blive brugt hjemme eller på
+kontoret.  Brugerne vil typisk bruge siden et par gange om ugen til et
+par gange om måneden.
 
 \subsection{Technologies}
 
@@ -253,7 +252,7 @@ Deltagerne 2, 3, 4 og 5 sagde at anmeldelser havde en indflydelse på hvor de va
   %%       spiser vi. Hvis hele familien skal ud at spise, undersøges der på nettet.
 
 
-\subsection{Generelle forventinger til en restaurantvurderingshjemmeside}
+\subsection{Generelle forventninger til siden}
 
 Det var et gennemgående træk hos alle interviewdeltagere, at de var forbeholdne
 over for idéen om at oprette sig som bruger. Da vi spurgte ind til ting der
@@ -329,12 +328,13 @@ restauranten.
   %%   Vibeke: Hvis jeg bliver meget overrasket, vil jeg skrive en anmeldelse.
 
 \section{Kerneopgaver}
-\label{sec:Kerneopgaver}
+
+Vi har identificeret følgende kerneopgaver:
 \begin{itemize}
-\item Find restaurant der opfylder nogle kriterier
-\item Find anmeldelser af en restaurant
-\item Anmeld en restaurant
-\item Find oplysninger om en bestemt restaurant
+\item Find restaurant der opfylder brugerens kriterier.
+\item Find anmeldelser af en restaurant.
+\item Anmeld en restaurant.
+\item Find oplysninger om en bestemt restaurant.
 \end{itemize}
 
 \section{Målgruppebeskrivelser}
@@ -376,7 +376,7 @@ restauranten.
     køretøj og ønsker at finde restauranter i nærheden.
 \end{description}
 
-\subsection{Uddybelse af målgruppen \emph{Karrieremennesker}}
+\subsection{Uddybelse af målgruppen Karrieremennesker}
 Det karriereorienterede menneske går ofte på restuarant, både som privatperson
 eller i forretningsøjemed. Personen kan både være mand eller kvinde, men vil
 oftest være 30--50 år, og have en god indtjening der giver mulighed for at spise
@@ -558,46 +558,46 @@ og hvorfor?
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page1.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 0 60 0]{mockup/page1.pdf}}
   \caption{Forsiden for vores prototype.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page2.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth]{mockup/page2.pdf}}
   \caption{Siden der vises når man søger på restauranter ved hjælp af
     søgefunktionaliteten på forsiden.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page7.pdf}
-  \caption{Siden der vises man klikker på det lille kort på forsiden.}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 200 0 0]{mockup/page7.pdf}}
+  \caption{Siden der vises når man klikker på det lille kort på forsiden.}
 \end{figure}
 
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page3.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 0 0]{mockup/page3.pdf}}
   \caption{Siden for en enkelt restaurant.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page6.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 0 0]{mockup/page6.pdf}}
   \caption{Siden for en enkelt restaurant når man er logget ind.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page4.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 100 60 0]{mockup/page4.pdf}}
   \caption{Forsiden med en fejlmeddelelse fordi brugeren har indtastet
     forkert brugernavn eller løsen.}
 \end{figure}
 
 \begin{figure}[hp]
   \centering
-  \includegraphics[width=0.9\textwidth]{mockup/page5.pdf}
+  \fbox{\includegraphics[width=0.9\textwidth, trim=0 200 0 0]{mockup/page5.pdf}}
   \caption{Siden der vises når søgningen returnerer nul resultater.}
 \end{figure}
 
