@@ -8,10 +8,11 @@ Punkt 1:    Info!
    - Find billetprisen hvis du skulle tage din nærmeste familie med.
 
  * Bestil billetter.
-   - Bestil billetter til fårup sommerland for din familie næste weekend.
+   - Bestil billetter til Fårup Sommerland for din familie næste weekend.
 
  * Adresse/rutevejledning.
-   - Find Fårup Sommerlands adresse og find ud af hvordan du kommer nemmest kommer dertil.
+   - Find Fårup Sommerlands adresse og find ud af hvordan du kommer nemmest
+     kommer dertil.
 
  * Sovemuligheder/spisemuligheder
    - Du har besluttet dig for at dig og din familie gerne vil bruge en weekend
@@ -24,11 +25,16 @@ Punkt 1:    Info!
 
  * Find billetter/bedste tilbud.
    o Sæsonkort
-     - Du har været så glad for fårup sommerland at du gerne vil have et sæsonkort. Find ud af hvilke goder et sæsonkort giver, og find priser for disse.
+     - Du har været så glad for fårup sommerland at du gerne vil have et
+       sæsonkort. Find ud af hvilke goder et sæsonkort giver, og find priser
+       for disse.
    o Familie-billetter
-     - En kollega fra dit arbejde vil gerne bestille billetter til en 4-dages tur til Fårup Sommerland. De har selv et sommerhus de vil bo i. Hjælp ham med at finde billetter.
+     - En kollega fra dit arbejde vil gerne bestille billetter til en 4-dages
+       tur til Fårup Sommerland. De har selv et sommerhus de vil bo i. Hjælp
+       ham med at finde billetter.
    o Mængderabat
-     - Du har besluttet at tage dit barns folkeskoleklasse med i fårup. Find information om mængderabat hvis der er nogen.
+     - Du har besluttet at tage dit barns folkeskoleklasse med i Fårup. Find
+       information om mængderabat hvis der er nogen.
 
 Punkt 2:
 
