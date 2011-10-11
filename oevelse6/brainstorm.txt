@@ -19,7 +19,7 @@ Punkt 1:    Info!
      i Fårup Sommerland. Find prisen for et ophold med overnatning på hotel.
 
  * Forlystelser/attraktioner
-   - Din nevø vil meget gerne prøve den super hurtige nye rutsjebane i Fårup
+   - Din nevø vil meget gerne prøve den nye super hurtige rutsjebane i Fårup
      Sommerland. Hvor høj skal man være for at måtte prøve forlystelsen? (Man
      kan godt se billeder af lynet, men ikke af falken? WTF?!? INCONSISTENCY!)
 
@@ -30,11 +30,20 @@ Punkt 1:    Info!
        for disse.
    o Familie-billetter
      - En kollega fra dit arbejde vil gerne bestille billetter til en 4-dages
-       tur til Fårup Sommerland. De har selv et sommerhus de vil bo i. Hjælp
-       ham med at finde billetter.
+       tur til Fårup Sommerland med hans kone og to børn. De har selv et sommerhus de vil bo i. Hjælp ham med at finde billetter.
    o Mængderabat
      - Du har besluttet at tage dit barns folkeskoleklasse med i Fårup. Find
        information om mængderabat hvis der er nogen.
+
+ * Booking
+   - Bestil overnatning og billetter til weekendturen med din familie.
+   
+ * Reservering
+   - Du har fundet ud af at du havde andre planer den weekend. Annullér reservationen eller skift datoen til weekenden efter.
+   
+ * Diverse
+   - Har Fårup Sommerland nogle ledige stillinger?
+   -  
 
 Punkt 2:
 
