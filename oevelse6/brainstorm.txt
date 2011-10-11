@@ -1,31 +1,34 @@
 Punkt 1:    Info!
 
  * Åbningstider/sæson
-   * Du overvejer at tage til Fårup Sommerland. Find ud af hvornår de har åbent og bestem en passende dato.
+   - Du overvejer at tage til Fårup Sommerland. Find ud af hvornår de har åbent
+     og bestem en passende dato.
 
  * Priser
-   * Find billetprisen hvis du skulle tage din nærmeste familie med.
+   - Find billetprisen hvis du skulle tage din nærmeste familie med.
 
  * Bestil billetter.
-   * Bestil billetter til fårup sommerland for din familie næste weekend.
+   - Bestil billetter til fårup sommerland for din familie næste weekend.
 
  * Adresse/rutevejledning.
-   * Find Fårup Sommerlands adresse og find ud af hvordan du kommer nemmest kommer dertil.
+   - Find Fårup Sommerlands adresse og find ud af hvordan du kommer nemmest kommer dertil.
 
  * Sovemuligheder/spisemuligheder
-   * Du har besluttet dig for at dig og din familie gerne vil bruge en weekend i Fårup Sommerland. Find prisen for et ophold med overnatning på hotel.
+   - Du har besluttet dig for at dig og din familie gerne vil bruge en weekend
+     i Fårup Sommerland. Find prisen for et ophold med overnatning på hotel.
 
  * Forlystelser/attraktioner
-   * Din nevø vil meget gerne prøve den super hurtige nye rutsjebane i Fårup Sommerland. Hvor høj skal man være for at måtte prøve forlystelsen?
-            (Man kan godt se billeder af lynet, men ikke af falken? WTF?!? INCONSISTENCY!)
+   - Din nevø vil meget gerne prøve den super hurtige nye rutsjebane i Fårup
+     Sommerland. Hvor høj skal man være for at måtte prøve forlystelsen? (Man
+     kan godt se billeder af lynet, men ikke af falken? WTF?!? INCONSISTENCY!)
 
  * Find billetter/bedste tilbud.
-   * Sæsonkort
-     * Du har været så glad for fårup sommerland at du gerne vil have et sæsonkort. Find ud af hvilke goder et sæsonkort giver, og find priser for disse.
-   * Familie-billetter
-     * En kollega fra dit arbejde vil gerne bestille billetter til en 4-dages tur til Fårup Sommerland. De har selv et sommerhus de vil bo i. Hjælp ham med at finde billetter.
-   * Mængderabat
-     * Du har besluttet at tage dit barns folkeskoleklasse med i fårup. Find information om mængderabat hvis der er nogen.
+   o Sæsonkort
+     - Du har været så glad for fårup sommerland at du gerne vil have et sæsonkort. Find ud af hvilke goder et sæsonkort giver, og find priser for disse.
+   o Familie-billetter
+     - En kollega fra dit arbejde vil gerne bestille billetter til en 4-dages tur til Fårup Sommerland. De har selv et sommerhus de vil bo i. Hjælp ham med at finde billetter.
+   o Mængderabat
+     - Du har besluttet at tage dit barns folkeskoleklasse med i fårup. Find information om mængderabat hvis der er nogen.
 
 Punkt 2:
 
