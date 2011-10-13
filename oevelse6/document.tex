@@ -27,26 +27,33 @@
 \renewcommand{\customer}{Fårup Sommerland}
 \date{Oktober 2011}
 
+\usepackage{enumitem}
+\setitemize{
+    itemsep=0pt
+}
+\setdescription{
+  font=\normalfont\bfseries,
+  style=sameline,
+  leftmargin=\parindent,
+  itemsep=0pt,
+  listparindent=\parindent
+}
+
+\pagestyle{fancy}
+\fancyhead[L]{Test af Fårup Sommerlands websted}
+\fancyhead[R]{Oktober 2011}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
+
 \hbadness=10000
 \hfuzz=50pt
 \maketitle
 \newpage
+\setcounter{page}{1}
 
-% Define the pagestyle we are going to be using
-\pagestyle{fancy}
-\lhead{Test af brugervenlighed af websted}
-\chead{}
-\rhead{Fårup Sommerland}
-\lfoot{Oktober 2011}
-\cfoot{}
-\rfoot{Side \thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-
-
-\section{Drejebog}
+\section*{Drejebog}
 
 \paragraph{Startbetingelser}
 \begin{itemize}
