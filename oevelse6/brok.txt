@@ -11,3 +11,7 @@ Noter og brokkerier:
     Man kan ikke vælge "0 overnatninger" i booking.
 
     Sidetitler i menuen til venstre (hvid tekst på hvid baggrund)
+
+    Miniferie-kort bliver ikke nævnt under billetsalg, men kun under booking og under "Family" under "Parken".
+
+    Ved nogle links åbner faarupbooking i en ny fane, og nogle steder bare i samme fane. Inkonsistens, og forvirrende sat sammen med punkt 1.
