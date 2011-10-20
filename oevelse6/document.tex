@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
 \renewcommand{\customer}{Fårup Sommerland}
@@ -51,6 +52,8 @@
     rightmargin=0.1\textwidth,
     itemsep=3mm
 }
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{.3pt}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -67,6 +70,8 @@
 \renewcommand\seriousproblem{\pic{seriousproblem}}
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
+
+\definecolor{gray}{gray}{0.8}
 
 \usepackage{booktabs}
 
@@ -232,7 +237,11 @@ tilbage til hovedsiden.
 
 \item[\smallproblem]{\textbf{Find vej er mangelfuld}}
 
-Når brugerne fandt \emph{Find vej} var flere af dem skuffede over af at de blev mødt af en side med irrelevant tekst. En af dem blev irriteret på siden, fordi man stadig skal bruge en adresse eller koordinater hvis man har en GPS. Adressen er faktisk slet ikke at finde på \emph{Find vej}. Dog var der en der blev glad for kørselsbekrivelserne. 
+Når brugerne fandt \emph{Find vej} var flere af dem skuffede over af at de blev
+mødt af en side med irrelevant tekst. En af dem blev irriteret på siden, fordi
+man stadig skal bruge en adresse eller koordinater hvis man har en GPS. Adressen
+er faktisk slet ikke at finde på \emph{Find vej}. Dog var der en der blev glad
+for kørselsbekrivelserne. 
 
 \item[\smallproblem]{\textbf{Svært at finde konkrete informationer om mad og drikke}}
 
@@ -246,23 +255,36 @@ Under opgav  BLA BLA PØLLERPØLLERPØLSER!!!
 \begin{kommentarer}
 \item[\smallproblem]{\textbf{Navn på E-shop}}
 
-I menulinjen står der "E-shop", men andre steder på hjemmesiden nævnes det som "webshoppen". Der var ingen af vores deltagere der brugte e-shop-linket i menubjælken, under den opgave hvor de skulle købe billetter.
+I menulinjen står der "E-shop", men andre steder på hjemmesiden nævnes det som
+"webshoppen". Der var ingen af vores deltagere der brugte e-shop-linket i
+menubjælken, under den opgave hvor de skulle købe billetter.
 \end{kommentarer}
 
 \section{Forsiden}
 
 \begin{kommentarer}
-\item[\seriousproblem]{\textbf{Forsiden løser ingen vigtige opgaver.}}
+\item[\seriousproblem]{\textbf{Forsiden løser ingen vigtige opgaver}}
 
-Der ikke én af vores deltagere der brugte forsiden til at løse opgaverne. De vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skulle tilbage fra enten booking- eller e-shopsiden.
+Der ikke én af vores deltagere der brugte forsiden til at løse opgaverne. De
+vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skulle
+tilbage fra enten booking- eller e-shopsiden.
 
-\item[\good]{\textbf{Forsiden er sjov.}}
+\item[\good]{\textbf{Forsiden er sjov}}
 
-Da vi spurgte deltagerne til hvad de synes om forsiden, svarede de fleste positivt. Den generelle mening var at de syntes at den var sjov og spændende.
+Da vi spurgte deltagerne til hvad de synes om forsiden, svarede de fleste
+positivt. Den generelle mening var at de syntes at den var sjov og spændende.
 
-\item[\smallproblem]{\textbf{Forsiden er for lang.}}
+\item[\smallproblem]{\textbf{Forsiden er for lang}}
 
-En af vores deltagere klagede over at forsiden var så lang at man ikke kunne have det hele på ét skærmbillede, og skulle scrolle ned af den for at få alle informationerne.
+En af vores deltagere klagede over at forsiden var så lang at man ikke kunne
+have det hele på ét skærmbillede, og skulle scrolle ned af den for at få alle
+informationerne.
+
+\item[\goodidea]{\textbf{Få inspiration fra engelsk forside}}
+
+Den engelske version af forsiden har en god indgangsvinkel til siden. Der er et
+banner med ofte brugt information, så man slipper for at navigere rundt og lede
+på siden.
 \end{kommentarer}
 
 \subsection{Egne kommentarer} % (fold)
@@ -270,7 +292,7 @@ En af vores deltagere klagede over at forsiden var så lang at man ikke kunne ha
 
 \begin{figure}[htbp]
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
+    \fcolorbox{gray}{white}{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
     \caption{Fejlmeddelse}
     \label{fig:fejlmeddelelse}
 \end{figure}
@@ -282,6 +304,14 @@ En af vores deltagere klagede over at forsiden var så lang at man ikke kunne ha
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
   billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figure \ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
 \end{kommentarer}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Pics/faarupfejlbooking}
+    \caption{Fejlmeddelsen under booking når man mangler et eller flere felter }
+    \label{fig:fejlmeddelelsebooking}
+\end{figure}
 
 \section{Udseende}
 \begin{kommentarer}
@@ -324,6 +354,8 @@ Testdeltagerne kunne godt lide ideen om funzone, men den er gemt så langt væk 
 
 Højdeguiden er et screenshot af et exel ark. Dette er ikke optimalt. En af vores deltagere prøvede at lukke screenshottet og havde svært med at finde ud komme ud af den side.
 
+Testdeltagerne kunne godt lide ideen om funzone, men den er gemt så langt væk de
+ikke ville opdage den hvis de ikke ledte efter den.
 \end{kommentarer}
 
 
