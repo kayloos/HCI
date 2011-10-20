@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
 \renewcommand{\customer}{Fårup Sommerland}
@@ -51,6 +52,8 @@
     rightmargin=0.1\textwidth,
     itemsep=3mm
 }
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{.3pt}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -67,6 +70,8 @@
 \renewcommand\seriousproblem{\pic{seriousproblem}}
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
+
+\definecolor{gray}{gray}{0.8}
 
 \usepackage{booktabs}
 
@@ -242,7 +247,7 @@ En af vores deltagere klagede over at forsiden var så lang at man ikke kunne ha
 
 \begin{figure}[htbp]
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
+    \fcolorbox{gray}{white}{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
     \caption{Fejlmeddelse}
     \label{fig:fejlmeddelelse}
 \end{figure}
