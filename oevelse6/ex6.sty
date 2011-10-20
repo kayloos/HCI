@@ -54,8 +54,8 @@
 % Force latex to include the appendiks in the header.
 \newcommand\appendix@section[1]{%
   \refstepcounter{section}%
-  \orig@section*{Appendiks \@Alph\c@section: #1}%
-  \addcontentsline{toc}{section}{Appendiks \@Alph\c@section: #1}%
+  \orig@section*{Appendiks \@Alph\c@section\quad #1}%
+  \addcontentsline{toc}{section}{\@Alph\c@section\quad #1}%
 }
 \let\orig@section\section
 \g@addto@macro\appendix{\let\section\appendix@section}
