@@ -21,7 +21,7 @@
 \usepackage{color, colortbl}               % Use to define colors and give tables a colored background
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
-\usepackage{tikz}
+\usepackage{url}
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
 \renewcommand{\customer}{Fårup Sommerland}
@@ -178,12 +178,21 @@ et stykke henne i testen når de var ved at gå i stå.
 søgesiden under den antagelse at søgefeltet havde fokus. Det krævede dog at de først klikkede
 på søgefeltet.
 
-\item[\smallproblem] \textbf{Booking- og web-portalerne åbner i nyt vindue}
+\item[\smallproblem] \textbf{Svært at komme tilbage til hovedsiden fra bookingportalen og webshoppen}
 
 Menupunkterne \emph{Overnatning} og \emph{E-shop} åbner et nyt vindue. Flere testdeltagere
-opdagede ikke dette og det gav dem problemer da disse sider ikke har menuen som på hovedsiden.
-Én testdeltager prøvede at klikke på \emph{Du er her: Forside}-linket, men dette førte hende ikke
-til hovedsiden som forventet.
+opdagede ikke dette og det gav dem problemer da de prøvede at komme tilbage til hovedsiden.
+
+For at komme tilbage til hovedsiden prøvede én testdeltager at klikke på \emph{Du er her:
+Forside}-linket, men dette førte hende ikke til hovedsiden som forventet. Andre deltagere
+prøvede at bruge Tilbage-knappen (hvilket ikke virkede da siden var åbnet et nyt vindue)
+og én valgte at indtaste \url{faarupsommerland.dk} i addressefeltet.
+
+\item[\smallproblem] \textbf{Fårup Sommerland-logoet fører ikke altid til forsiden}
+
+På bookingportalen og webshoppen bliver man ikke ført til hovedsiden hvis man klikker på Fårup
+Sommerland-logoet. Et par testdeltagere løb ind i dette problem når de prøvede at komme
+tilbage til hovedsiden.
 
 \end{kommentarer}
 
