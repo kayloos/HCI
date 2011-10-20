@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
 \renewcommand{\customer}{Fårup Sommerland}
@@ -51,6 +52,8 @@
     rightmargin=0.1\textwidth,
     itemsep=3mm
 }
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{.3pt}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -67,6 +70,8 @@
 \renewcommand\seriousproblem{\pic{seriousproblem}}
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
+
+\definecolor{gray}{gray}{0.8}
 
 \usepackage{booktabs}
 
@@ -157,28 +162,29 @@ på webstedet, eller som irriterede testdeltagerne voldsomt.
 \section{Navigation og opdeling}
 \begin{kommentarer}
 
-\item[\good] \textbf{Synligheden af menuen er god}
+\item[\good]{\textbf{Synligheden af menuen er god}}
 
 All testdeltagere fandt menuen med det samme.
 
-\item[\seriousproblem] \textbf{Dårlig navngivning af menupunkterne}
+\item[\seriousproblem]{\textbf{Dårlig navngivning af menupunkterne}}
 
 Testdeltagerne havde besvær med at regne ud hvad de forskellige
 menupunkter dækker over hvilket førte til at de ofte måtte alle siderne igennem for at finde
 det de ledte efter. Specielt menupunkterne \emph{Parken}, \emph{Planlæg dit besøg} og \emph{Information} skabte forvirring. 
 
-\item[\smallproblem] \textbf{Link til søgesiden er for usynligt}
+\item[\smallproblem]{\textbf{Link til søgesiden er for usynligt}}
 
 1 testdeltager brugte slet ikke søgefunktionaliteten og de resterende 4 fandt først søgesiden
-et stykke henne i testen når de var ved at gå i stå.
+et stykke henne i testen. Én testdeltager fandt først søgesiden til allersidst i testen og
+udtrykte derefter at hun var ked af at hun først fandt den så sent.
 
-\item[\smallproblem] \textbf{Søgefeltet på søgesiden har ikke fokus}
+\item[\smallproblem]{\textbf{Søgefeltet på søgesiden har ikke fokus}}
 
 2 deltagere forsøgte at skrive deres søgekriterier umiddelbart efter de var kommet ind på
 søgesiden under den antagelse at søgefeltet havde fokus. Det krævede dog at de først klikkede
 på søgefeltet.
 
-\item[\smallproblem] \textbf{Svært at komme tilbage til hovedsiden fra bookingportalen og webshoppen}
+\item[\smallproblem]{\textbf{Svært at komme tilbage til hovedsiden fra bookingportalen og webshoppen}}
 
 Menupunkterne \emph{Overnatning} og \emph{E-shop} åbner et nyt vindue. Flere testdeltagere
 opdagede ikke dette og det gav dem problemer da de prøvede at komme tilbage til hovedsiden.
@@ -188,7 +194,7 @@ Forside}-linket, men dette førte hende ikke til hovedsiden som forventet. Andre
 prøvede at bruge Tilbage-knappen (hvilket ikke virkede da siden var åbnet et nyt vindue)
 og én valgte at indtaste \url{faarupsommerland.dk} i addressefeltet.
 
-\item[\smallproblem] \textbf{Fårup Sommerland-logoet fører ikke altid til forsiden}
+\item[\smallproblem]{\textbf{Fårup Sommerland-logoet fører ikke altid til forsiden}}
 
 På bookingportalen og webshoppen bliver man ikke ført til hovedsiden hvis man klikker på Fårup
 Sommerland-logoet. Et par testdeltagere løb ind i dette problem når de prøvede at komme
@@ -204,6 +210,7 @@ Disse to punkter minder rigtigt meget om hinanden i opbygning og hvilken informa
 \section{Information}
 
 \begin{kommentarer}
+
 
 \item[\good] \textbf{Meget information}
 Flere deltagere nævnte at de følte at der var rigtigt meget relevant information på siden.
@@ -223,53 +230,91 @@ Under \emph{Mad og drikke} havde deltagerne svært ved at finde konkrete informa
 \section{Konsistens}
 
 \begin{kommentarer}
-\item[\smallproblem] \textbf{Navn på E-shop}
-I menulinjen står der "E-shop", men andre steder på hjemmesiden nævnes det som "webshoppen". Der var ingen af vores deltagere der brugte e-shop-linket i menubjælken, under den opgave hvor de skulle købe billetter.
+\item[\smallproblem]{\textbf{Navn på E-shop}}
+
+I menulinjen står der "E-shop", men andre steder på hjemmesiden nævnes det som
+"webshoppen". Der var ingen af vores deltagere der brugte e-shop-linket i
+menubjælken, under den opgave hvor de skulle købe billetter.
 \end{kommentarer}
 
 \section{Forsiden}
 
 \begin{kommentarer}
-\item[\seriousproblem] \textbf{Forsiden løser ingen vigtige opgaver}
-Der ikke én af vores deltagere der brugte forsiden til at løse opgaverne. De vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skulle tilbage fra enten booking- eller e-shopsiden.
+\item[\seriousproblem]{\textbf{Forsiden løser ingen vigtige opgaver}}
 
-\item[\good] \textbf{Forsiden er sjov}
-Da vi spurgte deltagerne til hvad de synes om forsiden, svarede de fleste positivt. Den generelle mening var at de syntes at den var sjov og spændende.
+Der ikke én af vores deltagere der brugte forsiden til at løse opgaverne. De
+vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skulle
+tilbage fra enten booking- eller e-shopsiden.
 
-\item[\smallproblem] \textbf{Forsiden er for lang}
-En af vores deltagere klagede over at forsiden var så lang at man ikke kunne have det hele på ét skærmbillede, og skulle scrolle ned af den for at få alle informationerne.
+\item[\good]{\textbf{Forsiden er sjov}}
+
+Da vi spurgte deltagerne til hvad de synes om forsiden, svarede de fleste
+positivt. Den generelle mening var at de syntes at den var sjov og spændende.
+
+\item[\smallproblem]{\textbf{Forsiden er for lang}}
+
+En af vores deltagere klagede over at forsiden var så lang at man ikke kunne
+have det hele på ét skærmbillede, og skulle scrolle ned af den for at få alle
+informationerne.
+
+\item[\goodidea]{\textbf{Få inspiration fra engelsk forside}}
+
+Den engelske version af forsiden har en god indgangsvinkel til siden. Der er et
+banner med ofte brugt information, så man slipper for at navigere rundt og lede
+på siden.
 \end{kommentarer}
 
 \subsection{Egne kommentarer} % (fold)
 \label{sub:Egne kommentarer forsiden}
+
+\begin{figure}[htbp]
+    \centering
+    \fcolorbox{gray}{white}{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
+    \caption{Fejlmeddelse}
+    \label{fig:fejlmeddelelse}
+\end{figure}
 
 % subsection Egne kommentarer (end)
 \begin{kommentarer}
   \item[\seriousproblem]{\textbf{Skiftende banner}}
 
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
-  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse,
-  hvor man kan se systeminformation.
+  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figure \ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
 \end{kommentarer}
 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Pics/faarupfejlbooking}
+    \caption{Fejlmeddelsen under booking når man mangler et eller flere felter }
+    \label{fig:fejlmeddelelsebooking}
+\end{figure}
 
 \section{Booking}
 \begin{kommentarer}
 \item[\good]{\textbf{Bestilling af overnatning}}
 
-Bestillingsboksen er nemt tilgængelig fra faarupbookings forside. Det er nemt og intuativt at bestille overnatningen.
+Bestillingsboksen er nemt tilgængelig fra bookingportalens forside. Det er nemt
+og intuitivt at bestille overnatningen.
 
 \item[\smallproblem]{\textbf{Fejlmeddelelser}}
 
-Da en testdeltager glemte et felt under bestillingen af en overnatning fortalte den ikke hvilket felt hun havde glemt, men kun at alle felter med en * er obligatoriske.
+Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden
+en fejlmeddelelse der ikke fortalte hvilken felter der ikke var udfyldt.
+Meddelelsen kan ses på Figure \ref{fig:fejlmeddelelsebooking}
 
 \item[\goodidea]{\textbf{Det glemte hotel}}
 
-En af testdeltagerne prøvede at booke siden ved først at finde hotellet under "Overnatningssteder". Da hun trykkede på hotellet hun ville have tog det hende ind på bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette kunne spare tid hvis den huskede hotellet.
+En af testdeltagerne prøvede at booke siden ved først at finde hotellet under
+``Overnatningssteder''. Da hun trykkede på hotellet hun ville have tog det hende
+ind på bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette
+kunne spare tid hvis den huskede hotellet.
 
 \item[\seriousproblem]{\textbf{Ingen søgning}}
 
-Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at finde et hotellet, denne søgening søger ikke på undersiderne. Derudover er der ingen søgfunktion på undersiden.
+Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at
+finde et hotellet, denne søgening søger ikke på undersiderne. Derudover er der
+ingen søgfunktion på undersiden.
 
 \end{kommentarer}
 
@@ -303,8 +348,13 @@ Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at 
 \begin{kommentarer}
 
 \item[\criticalproblem]{\textbf{E-Shop}}
+
 Vi kunne ikke teste e-shoppen da den var lukket.
 
+\item[\smallproblem]{\textbf{Funzone}}
+
+Testdeltagerne kunne godt lide ideen om funzone, men den er gemt så langt væk de
+ikke ville opdage den hvis de ikke ledte efter den.
 \end{kommentarer}
 
 
