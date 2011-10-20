@@ -14,7 +14,7 @@
 \usepackage[utf8]{inputenc}                % UTF8 encoding
 \usepackage[T1]{fontenc}                   % Default fonttype and style
 \usepackage[danish]{babel}                 % Danish hyphenation pattern
-\usepackage{charter}                       % Font type - Can be removed.
+\usepackage[bitstream-charter]{mathdesign}
 \usepackage{graphicx}                      % For graphics
 \usepackage{subfig}                        % For subfigures - Can be removed and replaced with standard figures
 %% \usepackage{a4wide}                        % Gives us a bit extra spaces in the margins - Can be removed.
@@ -45,22 +45,115 @@
 \setlist[opgaver,1]{label=\arabic*.}
 \setlist[opgaver,2]{label=\alph*.}
 
+\newlist{kommentarer}{itemize}{1}
+\setlist[kommentarer]{
+    leftmargin=0.15\textwidth,
+    rightmargin=0.1\textwidth,
+    itemsep=3mm
+}
 
-\pagestyle{fancy}
+\fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
 \fancyhead[R]{Oktober 2011}
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
 %\renewcommand{\headrulewidth}{0.4pt}
 %\renewcommand{\footrulewidth}{0.4pt}
 
+\newcommand\pic[1]{\includegraphics[trim=0 7 -10 0, scale=]{Pics/#1}}
+\renewcommand\good{\pic{good}}
+\renewcommand\goodidea{\pic{goodidea}}
+\renewcommand\smallproblem{\pic{smallproblem}}
+\renewcommand\seriousproblem{\pic{seriousproblem}}
+\renewcommand\criticalproblem{\pic{criticalproblem}}
+\renewcommand\filler{\pic{filler}}
+
+\usepackage{booktabs}
+
 \begin{document}
 
-\hbadness=10000
-\hfuzz=50pt
 \maketitle
 \newpage
 \setcounter{page}{1}
 
-\section*{Drejebog}
+\section*{Resumé}
+\setcounter{page}{1} % sets the current page number to 32
+\addcontentsline{toc}{section}{Resumé}
+Kolding Kommune tilbyder information om kommunen på www.koldingkom.dk.
+Webstedet blev lanceret i december 2002. DialogDesign  har gennemført en test
+af brugervenlighed af webstedet den 12. og 13-03-2003.
+
+Formålet med testen er at finde og beskrive problemer i dialogen
+mellem typiske brugere og Kolding Kommunes websted, samt at foreslå
+velgennemprøvede forbedringsforslag som løser de påpegede problemer.
+
+Testen er foretaget ved at bede otte personer om at løse typiske
+opgaver på webstedet under kyndig overvågning. Denne rapport beskriver de
+positive forhold og de problemer som testen har afsløret.
+
+\noindent De væsentligste punkter hvor webstedet fungerer godt:
+\begin{itemize}
+  \item \textbf{Indholdet er godt}\\ Testdeltagerne var imponerede og overraskede over de store mængder nyttigt indhold på webstedet. Sproget er godt, og testdeltagerne fandt ingen sproglige fejl.
+  \item \textbf{Navigation}\\ Navigationen fungerer i det store og hele godt. Testdeltagerne udnyttede effektivt samspillet mellem menuen i venstre side og Mere om boksene i højre side.
+  \item \textbf{Svartiderne er gode}
+\end{itemize}
+
+\noindent De væsentligste punkter hvor webstedet kan fungere endnu bedre:
+\begin{itemize}
+  \item \textbf{Søgefunktionen}\\
+  Anbefalinger til forbedring af søgefunktionen:
+  \begin{itemize}
+    \item Find de 100-200 søgeord som brugerne synes er vigtigst, ved at analysere søgeord. Giv disse søgeord særbehandling, så de altid fører til et ``perfekt'' søgeresultat.
+    \item Giv en konstruktiv meddelelse hvis en søgning ikke giver nogen resultater.
+    \item Udelad protokoller, mødereferater, intranetsider og lignende fra standard-søgningen.
+    \item Vis den sammenhæng hvori søgeordet optræder, for hvert søgeresultat. Fremhæv søgeordet.
+  \end{itemize}
+  \item \textbf{Integration med Netborger.dk}\\
+  Netborger skal integreres bedre med Kolding Kommunes websted. Se afsnit 9.
+  \item \textbf{Effektivitet}\\
+  Gør genveje og indeks mere synlige. Tilbyd en kort introduktion til webstedet. Se afsnit 3.
+\end{itemize}
+
+\clearpage
+
+\tableofcontents
+\clearpage
+
+
+\section{Kategorier af kommentarer}
+Testdeltagernes kommentarer er klassificeret i følgende kategorier:
+
+
+\begin{table}[!ht]
+\centering
+\rule{\linewidth}{\heavyrulewidth}\\[6mm]
+\begin{kommentarer}
+
+\item[\good] Godt. Denne måde at gøre tingene på syntes testdeltagerne godt om.
+Den kan tjene som forbillede for andre.
+
+\item[\goodidea] God idé. Et forslag fra en testdeltager eller testlederen, som
+kan medføre en væsentlig forbedring af brugeroplevelsen.
+
+\item[\smallproblem] Mindre problem. Testdeltagerne studsede et kort øjeblik.
+
+\item[\seriousproblem] Alvorligt problem. Problemet forsinkede testdeltagerne i 1-5
+minutter, men testdeltagerne kom videre af sig selv. Gav lejlighedsvis
+anledning til katastrofer.
+
+\item[\criticalproblem] Kritisk problem. Gav anledning til hyppige katastrofer. En
+katastrofe er en situation, hvor webstedet ``vandt'' over testdeltagerne, dvs.
+en situation som forhindrede testdeltagerne i at løse en rimelig arbejdsopgave
+på webstedet, eller som irriterede testdeltagerne voldsomt.
+
+\end{kommentarer}
+\rule{\linewidth}{\heavyrulewidth}
+\caption{Kategori symboler anvendt i denne rapport}
+\label{tab:gt}
+\end{table}%
+\clearpage
+
+\section{Drejebog}
 
 \paragraph{Startbetingelser}
 \begin{opgaver}
@@ -227,75 +320,11 @@ køber billet eller ophold?
 
 \end{document}
 
-\section*{Resumé}
-\setcounter{page}{1} % sets the current page number to 32
-\addcontentsline{toc}{section}{Resumé}
-Kolding Kommune tilbyder information om kommunen på www.koldingkom.dk.
-Webstedet blev lanceret i december 2002. DialogDesign  har gennemført en test
-af brugervenlighed af webstedet den 12. og 13-03-2003.
-
-\noindent Formålet med testen er at finde og beskrive problemer i dialogen
-mellem typiske brugere og Kolding Kommunes websted, samt at foreslå
-velgennemprøvede forbedringsforslag som løser de påpegede problemer.\newline
-
-\noindent Testen er foretaget ved at bede otte personer om at løse typiske
-opgaver på webstedet under kyndig overvågning. Denne rapport beskriver de
-positive forhold og de problemer som testen har afsløret.\newline
-
-\noindent De væsentligste punkter hvor webstedet fungerer godt:
-\begin{itemize}
-  \item \textbf{Indholdet er godt}\\ Testdeltagerne var imponerede og overraskede over de store mængder nyttigt indhold på webstedet. Sproget er godt, og testdeltagerne fandt ingen sproglige fejl.
-  \item \textbf{Navigation}\\ Navigationen fungerer i det store og hele godt. Testdeltagerne udnyttede effektivt samspillet mellem menuen i venstre side og Mere om boksene i højre side.
-  \item \textbf{Svartiderne er gode}
-\end{itemize}
-
-De væsentligste punkter hvor webstedet kan fungere endnu bedre:
-\begin{itemize}
-  \item \textbf{Søgefunktionen}\\
-  Anbefalinger til forbedring af søgefunktionen:
-  \begin{itemize}
-    \item Find de 100-200 søgeord som brugerne synes er vigtigst, ved at analysere søgeord. Giv disse søgeord særbehandling, så de altid fører til et ``perfekt'' søgeresultat.
-    \item Giv en konstruktiv meddelelse hvis en søgning ikke giver nogen resultater.
-    \item Udelad protokoller, mødereferater, intranetsider og lignende fra standard-søgningen.
-    \item Vis den sammenhæng hvori søgeordet optræder, for hvert søgeresultat. Fremhæv søgeordet.
-  \end{itemize}
-  \item \textbf{Integration med Netborger.dk}\\
-  Netborger skal integreres bedre med Kolding Kommunes websted. Se afsnit 9.
-  \item \textbf{Effektivitet}\\
-  Gør genveje og indeks mere synlige. Tilbyd en kort introduktion til webstedet. Se afsnit 3.
-\end{itemize}
-
-\noindent Rolf Molich\\
-\noindent DialogDesign\\
-\noindent April 2003
 
 \newpage
 \tableofcontents
 \newpage
 
-\section{Kategorier af kommentarer}
-Testdeltagernes kommentarer er klassificeret i følgende kategorier:
-
-\begin{table}[!ht]
-\centering
-\begin{tabular}{p{0.1\textwidth}p{0.8\textwidth}}\hline
-& \\
-\vspc\good            & Godt. Denne måde at gøre tingene på syntes testdeltagerne godt om. Den kan tjene som forbillede for andre.\\
-& \\
-\vspc\goodidea        & God idé. Et forslag fra en testdeltager eller testlederen, som kan medføre en væsentlig forbedring af brugeroplevelsen.\\
-& \\
-\vspc\smallproblem    & Mindre problem. Testdeltagerne studsede et kort øjeblik.\\
-& \\
-\vspc\seriousproblem  & Alvorligt problem. Problemet forsinkede testdeltagerne i 1-5 minutter, men testdeltagerne kom videre af sig selv. Gav
-                        lejlighedsvis anledning til katastrofer.\\
-& \\
-\vspc\criticalproblem & Kritisk problem. Gav anledning til hyppige katastrofer. En katastrofe er en situation, hvor webstedet ``vandt'' over
-                        testdeltagerne, dvs. en situation som forhindrede testdeltagerne i at løse en rimelig arbejdsopgave på webstedet, eller som irriterede testdeltagerne voldsomt.\\\noalign{\smallskip}\hline
-\end{tabular}
-\caption{Kategori symboler anvendt i denne rapport}
-\label{tab:gt}
-\end{table}%
-\newpage
 \section{Forsiden}
 
 \begin{figure}%
