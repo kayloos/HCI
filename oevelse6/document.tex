@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
 \renewcommand{\customer}{Fårup Sommerland}
@@ -51,6 +52,8 @@
     rightmargin=0.1\textwidth,
     itemsep=3mm
 }
+\setlength\fboxsep{0pt}
+\setlength\fboxrule{.3pt}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -67,6 +70,8 @@
 \renewcommand\seriousproblem{\pic{seriousproblem}}
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
+
+\definecolor{gray}{gray}{0.8}
 
 \usepackage{booktabs}
 
@@ -259,7 +264,7 @@ på siden.
 
 \begin{figure}[htbp]
     \centering
-    \fbox{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
+    \fcolorbox{gray}{white}{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
     \caption{Fejlmeddelse}
     \label{fig:fejlmeddelelse}
 \end{figure}
@@ -269,10 +274,16 @@ på siden.
   \item[\seriousproblem]{\textbf{Skiftende banner}}
 
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
-  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse,
-  hvor man kan se systeminformation.
+  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figure \ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
 \end{kommentarer}
 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Pics/faarupfejlbooking}
+    \caption{Fejlmeddelsen under booking når man mangler et eller flere felter }
+    \label{fig:fejlmeddelelsebooking}
+\end{figure}
 
 \section{Booking}
 \begin{kommentarer}
@@ -283,9 +294,9 @@ og intuitivt at bestille overnatningen.
 
 \item[\smallproblem]{\textbf{Fejlmeddelelser}}
 
-Da en testdeltager glemte et felt under bestillingen af en overnatning fortalte
-den ikke hvilket felt hun havde glemt, men kun at alle felter med en * er
-obligatoriske.
+Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden
+en fejlmeddelelse der ikke fortalte hvilken felter der ikke var udfyldt.
+Meddelelsen kan ses på Figure \ref{fig:fejlmeddelelsebooking}
 
 \item[\goodidea]{\textbf{Det glemte hotel}}
 
