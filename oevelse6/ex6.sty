@@ -12,8 +12,7 @@
 \newcommand{\cskip}{\noalign{\smallskip}\hline\noalign{\smallskip}}
 \newcommand{\vspc}{\vspace{-0.35cm}}
 
-% Define customer and company here. Also define author(s) and the title
-\newcommand{\customer}{Peter Olsen \\ Kolding Kommune}
+\newcommand{\customer}{}
 
 % Define frontpage layout
 \def\thickhrulefill{\leavevmode \leaders \hrule height 1pt\hfill \kern \z@}
@@ -22,7 +21,7 @@
   \thispagestyle{empty}%
   \vskip 1cm
   \hrule height 8pt
-  \vskip 2cm
+  \vskip 1.5cm
   \par
   \begin{flushleft}
     \Huge \strut \@title \par
@@ -30,8 +29,7 @@
   \vskip 1cm
   \hrule height 2pt
   \par
-  \vfil
-  \vfil
+  \vfill
   \vskip 4cm
   \begin{flushleft}
     \normalfont\Large Udarbejdet for \customer
@@ -42,7 +40,13 @@
   \end{flushleft}
   \vskip 2cm
   \begin{flushleft}
-  \normalfont\normalsize\ Udarbejdet af \@author
+  \normalfont\normalsize Udarbejdet af \\[2mm]
+  \begin{tabular}{lr}
+    Claus Skou Nielsen & \texttt{ptf992} \\
+    Kasper Passov & \texttt{pvx884} \\
+    Michael Budde & \texttt{skx295} \\
+    Niels Ørbæk Christensen & \texttt{cxr861}
+  \end{tabular}
   \end{flushleft}
   \null
   \cleardoublepage
