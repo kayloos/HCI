@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+\usepackage{booktabs}
 
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
@@ -54,6 +55,7 @@
 }
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{.3pt}
+\definecolor{gray}{gray}{0.6}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -71,9 +73,6 @@
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
 
-\definecolor{gray}{gray}{0.8}
-
-\usepackage{booktabs}
 
 \begin{document}
 
@@ -307,7 +306,7 @@ på siden.
   \item[\seriousproblem]{\textbf{Skiftende banner}}
 
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
-  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figure \ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
+  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figur~\ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
 \end{kommentarer}
 
 \section{Udseende}
