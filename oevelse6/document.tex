@@ -24,6 +24,7 @@
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
 \usepackage{booktabs}
+\usepackage{wasysym}
 
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
@@ -57,6 +58,8 @@
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{.3pt}
 \definecolor{gray}{gray}{0.6}
+
+\newenvironment{forslag}{\emph{Forbedringsforslag:}\\[0.5mm]}{}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -210,6 +213,12 @@ til allersidst i testen og udtrykte derefter at hun var ked af at hun først
 fandt den så sent. På Figur \ref{fig:forside} kan man se hvor svært søgefeltet
 er at få øje på.
 
+\begin{forslag}
+Tilføj et lille søgefelt til venstre for søgeknappen så man kan direkte fra
+alle sider uden at skulle ind på en speciel søgeside.
+\end{forslag}
+
+
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=0.99\textwidth]{Pics/forsidefaarup}}
@@ -286,6 +295,11 @@ Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden
 en fejlmeddelelse, der ikke fortalte hvilke felter der ikke var udfyldt.
 Meddelelsen kan ses på Figur~\ref{fig:fejlmeddelelsebooking}.
 
+\begin{forslag}
+I stedet for at vise en dialogboks så vis en fejlmeddelelse ved de felter som ikke blev
+udfyldt korrekt.
+\end{forslag}
+
 \begin{figure}[htbp]
     \centering
     \fbox{\includegraphics[width=0.6\textwidth]{Pics/faarupfejlbooking}}
@@ -296,15 +310,9 @@ Meddelelsen kan ses på Figur~\ref{fig:fejlmeddelelsebooking}.
 \item[\goodidea] \textbf{Det glemte hotel}
 
 En af testdeltagerne prøvede at booke siden ved først at finde hotellet under
-``Overnatningssteder''. Da hun trykkede på hotellet, ville hun have det tog det hende
+\emph{Overnatningssteder}. Da hun trykkede på hotellet, ville hun have det tog det hende
 ind på bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette
 kunne spare tid hvis den huskede hotellet.
-
-\item[\seriousproblem] \textbf{Ingen søgning}
-
-Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at
-finde et hotellet, denne søgning søger ikke på undersiderne. Derudover er der
-ingen søgefunktion på undersiden.
 
 \end{kommentarer}
 
@@ -353,6 +361,10 @@ Figure \ref{fig:koerselsbeskrivelse}.
 Højdeguiden er et screenshot af et Microsoft Excel ark. Dette er ikke optimalt.
 En af vores deltagere prøvede at lukke screenshottet og havde svært med at finde
 ud komme ud af den side.
+
+\begin{forslag}
+Lav screenshottet om til en tabel på selve siden.
+\end{forslag}
 
 \item[\smallproblem] \textbf{Svært at finde konkrete informationer om mad og drikke}
 
@@ -557,15 +569,15 @@ Siden Fårup Sommerland fortalte at deres hovedmålgruppe var børnefamilier med
 \begin{table}[htb]
 %\section{Testdeltagerne}
 \begin{center}
-\begin{tabular}{lllll}
+\begin{tabular}{lllcl}
     \toprule
     Deltagernummer    &  Erhverv        & Aldersgruppe  & Køn     & Interneterfaring  \\
     \midrule
-    1                 & Pharmeceut      & 40            & K       & Middel            \\ 
-    2                 & Pædagog         & 50            & K       & Begrænset         \\ 
-    3                 & Jurist          & 35            & K       & Øvet              \\ 
-    4                 & Konsulent       & 40            & K       & Meget øvet        \\ 
-    5                 & Civilingeniør   & 50            & K       & Begrænset         \\ 
+    1                 & Pharmaceut      & 40            & \female & Middel            \\
+    2                 & Pædagog         & 50            & \female & Begrænset         \\
+    3                 & Jurist          & 35            & \female & Øvet              \\
+    4                 & Konsulent       & 40            & \female & Meget øvet        \\
+    5                 & Civilingeniør   & 50            & \female & Begrænset         \\
     \bottomrule
 \end{tabular}
 \caption{Oversigt over testdeltagerne.}
