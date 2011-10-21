@@ -22,6 +22,7 @@
 \usepackage{fancyhdr}                      % Fancy headers? Yes please.
 \usepackage{ex6}                           % Separate form and function plus ugly tex code
 \usepackage{url}
+\usepackage{booktabs}
 
 \author{Michael Budde, Kasper Passov, Niels Ørbæk Christensen, Claus Skou Nielsen}
 \title{Test af brugervenlighed af www.faarupsommerland.dk}
@@ -54,6 +55,7 @@
 }
 \setlength\fboxsep{0pt}
 \setlength\fboxrule{.3pt}
+\definecolor{gray}{gray}{0.6}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -63,7 +65,7 @@
 %\renewcommand{\headrulewidth}{0.4pt}
 %\renewcommand{\footrulewidth}{0.4pt}
 
-\newcommand\pic[1]{\includegraphics[trim=0 7 -10 0]{Pics/#1}}
+\newcommand\pic[1]{\includegraphics[trim=0 6 -10 0]{Pics/#1}}
 \renewcommand\good{\pic{good}}
 \renewcommand\goodidea{\pic{goodidea}}
 \renewcommand\smallproblem{\pic{smallproblem}}
@@ -71,9 +73,6 @@
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
 
-\definecolor{gray}{gray}{0.8}
-
-\usepackage{booktabs}
 
 \begin{document}
 
@@ -84,17 +83,22 @@
 \section*{Resumé}
 \setcounter{page}{1} % sets the current page number to 32
 \addcontentsline{toc}{section}{Resumé}
-Kolding Kommune tilbyder information om kommunen på www.koldingkom.dk.
-Webstedet blev lanceret i december 2002. DialogDesign  har gennemført en test
-af brugervenlighed af webstedet den 12. og 13-03-2003.
 
-Formålet med testen er at finde og beskrive problemer i dialogen
-mellem typiske brugere og Kolding Kommunes websted, samt at foreslå
-velgennemprøvede forbedringsforslag som løser de påpegede problemer.
+Faarup Sommerland præsenterer og tilbyder information om forlystelsesparken på
+\url{faarupsommerland.dk}. Vi, de studerende, har udført en brugertest af
+hjemmesiden, med udgangspunkt i oplægget fra Faarup Sommerland.
 
-Testen er foretaget ved at bede otte personer om at løse typiske
-opgaver på webstedet under kyndig overvågning. Denne rapport beskriver de
-positive forhold og de problemer som testen har afsløret.
+%Kolding Kommune tilbyder information om kommunen på www.koldingkom.dk.
+%Webstedet blev lanceret i december 2002. DialogDesign  har gennemført en test
+%af brugervenlighed af webstedet den 12. og 13-03-2003.
+
+%Formålet med testen er at finde og beskrive problemer i dialogen
+%mellem typiske brugere og Kolding Kommunes websted, samt at foreslå
+%velgennemprøvede forbedringsforslag som løser de påpegede problemer.
+
+%Testen er foretaget ved at bede otte personer om at løse typiske
+%opgaver på webstedet under kyndig overvågning. Denne rapport beskriver de
+%positive forhold og de problemer som testen har afsløret.
 
 \noindent De væsentligste punkter hvor webstedet fungerer godt:
 \begin{itemize}
@@ -134,22 +138,30 @@ Testdeltagernes kommentarer er klassificeret i følgende kategorier:
 \rule{\linewidth}{\heavyrulewidth}\\[6mm]
 \begin{kommentarer}
 
-\item[\good] Godt. Denne måde at gøre tingene på syntes testdeltagerne godt om.
-Den kan tjene som forbillede for andre.
+\item[\good] \textbf{Godt}
 
-\item[\goodidea] God idé. Et forslag fra en testdeltager eller testlederen, som
-kan medføre en væsentlig forbedring af brugeroplevelsen.
+Denne måde at gøre tingene på syntes testdeltagerne godt om. Den kan tjene som forbillede for
+andre.
 
-\item[\smallproblem] Mindre problem. Testdeltagerne studsede et kort øjeblik.
+\item[\goodidea] \textbf{God idé}
 
-\item[\seriousproblem] Alvorligt problem. Problemet forsinkede testdeltagerne i 1-5
-minutter, men testdeltagerne kom videre af sig selv. Gav lejlighedsvis
-anledning til katastrofer.
+Et forslag fra en testdeltager eller testlederen, som kan medføre en væsentlig forbedring af
+brugeroplevelsen.
 
-\item[\criticalproblem] Kritisk problem. Gav anledning til hyppige katastrofer. En
-katastrofe er en situation, hvor webstedet ``vandt'' over testdeltagerne, dvs.
-en situation som forhindrede testdeltagerne i at løse en rimelig arbejdsopgave
-på webstedet, eller som irriterede testdeltagerne voldsomt.
+\item[\smallproblem] \textbf{Mindre problem}
+
+Testdeltagerne studsede et kort øjeblik.
+
+\item[\seriousproblem] \textbf{Alvorligt problem}
+
+Problemet forsinkede testdeltagerne i 1-5 minutter, men testdeltagerne kom videre af sig selv.
+Gav lejlighedsvis anledning til katastrofer.
+
+\item[\criticalproblem] \textbf{Kritisk problem}
+
+Gav anledning til hyppige katastrofer. En katastrofe er en situation, hvor webstedet ``vandt''
+over testdeltagerne, dvs. en situation som forhindrede testdeltagerne i at løse en rimelig
+arbejdsopgave på webstedet, eller som irriterede testdeltagerne voldsomt.
 
 \end{kommentarer}
 \rule{\linewidth}{\heavyrulewidth}
@@ -162,27 +174,35 @@ på webstedet, eller som irriterede testdeltagerne voldsomt.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.7\textwidth]{Pics/faarupfejlbooking}
-    \caption{Fejlmeddelsen under booking når man mangler et eller flere felter }
+    \caption{Fejlmeddelsen under booking når man mangler et eller flere felter.}
     \label{fig:fejlmeddelelsebooking}
 \end{figure}
 
 \section{Booking}
 \begin{kommentarer}
-\item[\good]{\textbf{Bestilling af overnatning}}
+\item[\good] \textbf{Bestilling af overnatning}
 
-Bestillingsboksen er nemt tilgængelig fra bookingportalens forside. Det er nemt og intuitivt at bestille overnatningen.
+Bestillingsboksen er nemt tilgængelig fra bookingportalens forside. Det er nemt og intuitivt
+at bestille overnatningen.
 
-\item[\smallproblem]{\textbf{Fejlmeddelelser}}
+\item[\smallproblem] \textbf{Fejlmeddelelser}
 
-Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden en fejlmeddelelse der ikke fortalte hvilken felter der ikke var udfyldt. Meddelelsen kan ses på Figure \ref{fig:fejlmeddelelsebooking}
+Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden en
+fejlmeddelelse der ikke fortalte hvilken felter der ikke var udfyldt. Meddelelsen kan ses på
+Figur~\ref{fig:fejlmeddelelsebooking}.
 
-\item[\goodidea]{\textbf{Det glemte hotel}}
+\item[\goodidea] \textbf{Det glemte hotel}
 
-En af testdeltagerne prøvede at booke siden ved først at finde hotellet under ``Overnatningssteder''. Da hun trykkede på hotellet hun ville have tog det hende ind på bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette kunne spare tid hvis den huskede hotellet.
+En af testdeltagerne prøvede at booke siden ved først at finde hotellet under
+``Overnatningssteder''. Da hun trykkede på hotellet hun ville have tog det hende ind på
+bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette kunne spare tid hvis
+den huskede hotellet.
 
-\item[\seriousproblem]{\textbf{Ingen søgning}}
+\item[\seriousproblem] \textbf{Ingen søgning}
 
-Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at finde et hotellet, denne søgening søger ikke på undersiderne. Derudover er der ingen søgfunktion på undersiden.
+Flere af vores brugere forsøgte at bruge søgefunktionen på hovedsiden til at finde et
+hotellet, denne søgening søger ikke på undersiderne. Derudover er der ingen søgfunktion på
+undersiden.
 
 \end{kommentarer}
 
@@ -260,6 +280,16 @@ Når brugerne fandt \emph{Find vej} var flere af dem skuffede over af at de blev
 \item[\smallproblem] \textbf{Svært at finde konkrete informationer om mad og drikke}
 Under \emph{Mad og drikke} havde deltagerne svært ved at finde konkrete informationer. F.eks. om man selv måtte tage mad med, eller om der blev solgt pølser. Fårup Grillens side er det sted de fleste kiggede for information om pølser, men fik i stedet en masse information om hvordan grillen ikke er. De fleste missede det faktum at Grillen faktisk sælger hotdogs.
 
+\item[\seriousproblem]{\textbf{``Information''-menupunkt er et sort-hul}}
+
+% Dårlig formulering undskyld
+Når deltagerne fik en opgave, hvor de skulle finde noget specifikt, og det ikke
+var åbenlyst under hvilket et af menupunkterne de kunne finde det, klikkede de
+på ``Information''. Det resulterede i at de klikkede meget rundt på siden.
+Menupunktet ``Information'' er simpelthen for generelt, så lige meget hvad
+deltageren leder efter, forestiller de sig at det måske kan være under
+``Information''.
+
 \end{kommentarer}
 
 
@@ -315,7 +345,7 @@ på siden.
   \item[\seriousproblem]{\textbf{Skiftende banner}}
 
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
-  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figure \ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
+  billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse (Figur~\ref{fig:fejlmeddelelse}), hvor man kan se systeminformation.
 \end{kommentarer}
 
 \section{Udseende}
@@ -371,7 +401,23 @@ Hvis man prøver på at gå ind på en side der ikke findes får man en 404-side
 \appendix
 \addcontentsline{toc}{section}{Appendiks}
 
+\section{Fremgangsmåde}
+
+Vi udførte alle interviews i løbet af to dage, hvor vi den første dag udførte to
+interviews, og tre interviews den næste dag.
+
+Vi udarbejdede drejebogen ved først at teste den på os selv, for at finde
+åbenlyse fejl, og sørge for at opgaverne var naturlige. Derefter afleverede vi
+vores drejebog til instruktoren, og indarbejdede de rettelser vi fik tilbage.
+
+Alle interviews foregik præcis efter drejebogen (Appendiks \ref{apx:drejebog}).
+I løbet af vores interviews, sørgede vi for at dedikere én person pr. interview
+til at skrive noter, en som interviewer og en til at holde styr på opgaverne.
+Vi byttede roller fra interview til interview, og sørgede for at den person der
+kendte deltagerne ikke interviewede dem han kendte i forvejen.
+
 \section{Drejebog}
+\label{apx:drejebog}
 
 \paragraph{Startbetingelser}
 \begin{opgaver}
