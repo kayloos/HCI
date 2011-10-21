@@ -15,7 +15,7 @@
 \usepackage[T1]{fontenc}                   % Default fonttype and style
 \usepackage[danish]{babel}                 % Danish hyphenation pattern
 \usepackage[bitstream-charter]{mathdesign}
-\usepackage[small,margin=1cm]{caption}
+\usepackage[small]{caption}
 \usepackage{graphicx}                      % For graphics
 \usepackage{subfig}                        % For subfigures - Can be removed and replaced with standard figures
 %% \usepackage{a4wide}                        % Gives us a bit extra spaces in the margins - Can be removed.
@@ -363,7 +363,7 @@ på siden.
 
 \begin{figure}[htbp]
     \centering
-    \fcolorbox{gray}{white}{\includegraphics[width=0.9\textwidth]{Pics/faarupfejlside2}}
+    \fcolorbox{gray}{white}{\includegraphics[width=\textwidth]{Pics/faarupfejlside2}}
     \caption{Denne applikationsfejl vises hvis man klikker på den hvide banner på forsiden.}
     \label{fig:fejlmeddelelse}
 \end{figure}
