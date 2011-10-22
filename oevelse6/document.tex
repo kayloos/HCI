@@ -60,7 +60,8 @@
 \setlength\fboxrule{.3pt}
 \definecolor{gray}{gray}{0.6}
 
-\newenvironment{forslag}{\emph{Forbedringsforslag:}\\[0.5mm]}{}
+\newcommand{\kommentar}[2]{\item[#1] \textbf{#2}\par\nopagebreak}{}
+\newenvironment{forslag}{\emph{Forbedringsforslag:}\\*[0.5mm]}{}
 
 \fancyhf{}
 \fancyhead[L]{Test af Fårup Sommerlands websted}
@@ -77,6 +78,7 @@
 \renewcommand\seriousproblem{\pic{seriousproblem}}
 \renewcommand\criticalproblem{\pic{criticalproblem}}
 \renewcommand\filler{\pic{filler}}
+
 
 
 \begin{document}
@@ -150,27 +152,22 @@ Testdeltagernes kommentarer er klassificeret i følgende kategorier:
 \rule{\linewidth}{\heavyrulewidth}\\[6mm]
 \begin{kommentarer}
 
-\item[\good] \textbf{Godt}
-
+\kommentar{\good}{Godt}
 Denne måde at gøre tingene på syntes testdeltagerne godt om. Den kan tjene som
 forbillede for andre.
 
-\item[\goodidea] \textbf{God idé}
-
+\kommentar{\goodidea}{God idé}
 Et forslag fra en testdeltager eller testlederen, som kan medføre en væsentlig
 forbedring af brugeroplevelsen.
 
-\item[\smallproblem] \textbf{Mindre problem}
-
+\kommentar{\smallproblem}{Mindre problem}
 Testdeltagerne studsede et kort øjeblik.
 
-\item[\seriousproblem] \textbf{Alvorligt problem}
-
+\kommentar{\seriousproblem}{Alvorligt problem}
 Problemet forsinkede testdeltagerne i 1-5 minutter, men testdeltagerne kom
 videre af sig selv.  Gav lejlighedsvis anledning til katastrofer.
 
-\item[\criticalproblem] \textbf{Kritisk problem}
-
+\kommentar{\criticalproblem}{Kritisk problem}
 Gav anledning til hyppige katastrofer. En katastrofe er en situation, hvor
 webstedet ``vandt'' over testdeltagerne, dvs. en situation som forhindrede
 testdeltagerne i at løse en rimelig arbejdsopgave på webstedet, eller som
@@ -193,14 +190,13 @@ Hvis henvisningerne forekommer i tekst der allerede er i kursiv vil de blive mar
 
 
 \section{Navigation og opdeling}
+
 \begin{kommentarer}
 
-\item[\good]{\textbf{Synligheden af menuen er god}}
-
+\kommentar{\good}{Synligheden af menuen er god}
 All testdeltagere fandt menuen med det samme.
 
-\item[\seriousproblem]{\textbf{Dårlig navngivning af menupunkterne}}
-
+\kommentar{\seriousproblem}{Dårlig navngivning af menupunkterne}
 Testdeltagerne havde besvær med at regne ud hvad de forskellige menupunkter
 dækker over hvilket førte til at de ofte måtte alle siderne igennem for at finde
 det de ledte efter. Specielt menupunkterne \emph{Parken}, \emph{Planlæg dit
@@ -221,14 +217,14 @@ informationsområde. Flere undersider i \emph{Planlæg dit besøg} kunne lige s�
 \emph{Parken} og det gør det svært at regne ud hvor man skal lede.
 \end{forslag}
 
-\item[\goodidea] \textbf{Mouseover-dropdown menupunkter}
+\kommentar{\goodidea}{Mouseover-dropdown menupunkter}
 
 En af deltagerne foreslog at der skulle komme en dropdown-menu når man førte
 musen hen over menupunkterne, der viste hvilke undermenupunkter der var inde
 under siden. Dette kunne give et bedre overblik, så man ikke skulle klikke ind
 på alle siderne for at finde et bestemt underpunkt.
 
-\item[\seriousproblem]{\textbf{Link til søgesiden er for usynligt}}
+\kommentar{\seriousproblem}{Link til søgesiden er for usynligt}
 
 1 testdeltager brugte slet ikke søgefunktionaliteten og de resterende 4 fandt
 først søgesiden et stykke henne i testen. Én testdeltager fandt først søgesiden
@@ -249,26 +245,26 @@ alle sider uden at skulle ind på en speciel søgeside.
     \label{fig:forside}
 \end{figure}
 
-\item[\smallproblem]{\textbf{Søgefeltet på søgesiden har ikke fokus}}
+\kommentar{\smallproblem}{Søgefeltet på søgesiden har ikke fokus}
 
 2 deltagere forsøgte at skrive deres søgekriterier umiddelbart efter de var
 kommet ind på søgesiden under den antagelse at søgefeltet havde fokus. Det
 krævede dog at de først klikkede på søgefeltet.
 
-\item[\seriousproblem]{\textbf{Søgefunktionen søger kun på \url{faarupsommerland.dk}}}
+\kommentar{\seriousproblem}{Søgefunktionen søger kun på \url{faarupsommerland.dk}}
 
 Søgefunktionen finder ingen resultater på \url{faarupbooking.dk}
 eller \url{faarupshop.dk}. Dette skabte problemer for en af vores deltagere der ville
 finde informationer om et bestemt hotel, og hun endte med at gå ind på hotellets
 egen hjemmeside.
 
-\item[\good]{\textbf{Søgefunktionen fungerer}}
+\kommentar{\good}{Søgefunktionen fungerer}
 
 Når der blev søgt på emner der var på \url{faarupsommerland.dk} oplevede vi i langt
 størstedelen af tilfældende at deltagerne der brugte søgefeltet fandt siden de
 ledte efter i første forsøg.
 
-\item[\seriousproblem]{\textbf{Svært at komme tilbage til hovedsiden fra bookingportalen og webshoppen}}
+\kommentar{\seriousproblem}{Svært at komme tilbage til hovedsiden fra bookingportalen og webshoppen}
 
 Menupunkterne \emph{Overnatning} og \emph{E-shop} åbner et nyt vindue. Flere testdeltagere
 opdagede ikke dette og det gav dem problemer da de prøvede at komme tilbage til hovedsiden.
@@ -283,13 +279,13 @@ virkede da siden var åbnet et nyt vindue) og én valgte at indtaste
 Alle delsider samles under en hovedside, hvor alle sider har samme menupunkter og tema. Hvis dette ikke er muligt af tekniske årsager bør der ligges mere vægt på at det føles som én side. E-shop- og booking-siderne skal have samme menupunkter som hovedsiden, og Fårup-logoet i toppen af siden skal altid føre til \url{faarupsommerland.dk}. Vi mener desuden at alle links til E-shop eller booking skal åbnes i det aktuelle vindue.
 \end{forslag}
 
-\item[\smallproblem]{\textbf{Fårup Sommerland-logoet fører ikke altid til forsiden}}
+\kommentar{\smallproblem}{Fårup Sommerland-logoet fører ikke altid til forsiden}
 
 På bookingportalen og webshoppen bliver man ikke ført til hovedsiden hvis man
 klikker på Fårup Sommerland-logoet. Et par testdeltagere løb ind i dette problem
 når de prøvede at komme tilbage til hovedsiden.
 
-\item[\smallproblem] \textbf{\emph{Mad og drikke} og \emph{Butikker} er placeret forskelligt}
+\kommentar{\smallproblem}{\emph{Mad og drikke} og \emph{Butikker} er placeret forskelligt}
 
 Disse to punkter minder rigtigt meget om hinanden i opbygning og hvilken
 information de indeholder. Alligevel er de placeret under forskellige
@@ -301,7 +297,7 @@ informationer om spisesteder.
 
 \section{Booking}
 \begin{kommentarer}
-\item[\good] \textbf{Bestilling af overnatning}
+\kommentar{\good}{Bestilling af overnatning}
 
 Bestillingsboksen er nemt tilgængelig fra bookingportalens forside. Det er nemt
 at finde hvor man bestiller fra forsiden (se Figur~\ref{fig:forsidebooking}). 
@@ -315,7 +311,7 @@ at finde hvor man bestiller fra forsiden (se Figur~\ref{fig:forsidebooking}).
     \label{fig:forsidebooking}
 \end{figure}
 
-\item[\smallproblem] \textbf{Fejlmeddelelser}
+\kommentar{\smallproblem}{Fejlmeddelelser}
 
 Da en testdeltager glemte et felt under bestillingen af en overnatning gav siden
 en fejlmeddelelse, der ikke fortalte hvilke felter der ikke var udfyldt.
@@ -333,7 +329,7 @@ udfyldt korrekt.
     \label{fig:fejlmeddelelsebooking}
 \end{figure}
 
-\item[\goodidea] \textbf{Det glemte hotel}
+\kommentar{\goodidea}{Det glemte hotel}
 
 En af testdeltagerne prøvede at booke siden ved først at finde hotellet under
 \emph{Overnatningssteder}. Da hun trykkede på hotellet, ville hun have det tog det hende
@@ -347,11 +343,11 @@ kunne spare tid hvis den huskede hotellet.
 \begin{kommentarer}
 
 
-\item[\good] \textbf{Meget information}
+\kommentar{\good}{Meget information}
 
 Flere deltagere nævnte at de følte at der var rigtigt meget relevant information på siden.
 
-\item[\seriousproblem] \textbf{Meget tekst}
+\kommentar{\seriousproblem}{Meget tekst}
 
 Alle deltagerene fandt en eller flere gange en side hvor de skulle til at læse
 mere tekst end de gad for at finde de informationer de ledte efter. Flere af
@@ -362,7 +358,7 @@ stedet.
 Hvor der er meget tekst kunne man skrive et kort resumé inden teksten. Derudover kunne man fremhæve nøgleordene enten med fed tekst eller understregning. 
 \end{forslag}
 
-\item[\smallproblem] \textbf{\emph{Find vej} er mangelfuld}
+\kommentar{\smallproblem}{\emph{Find vej} er mangelfuld}
 
 Når brugerne fandt \emph{Find vej} var flere af dem skuffede over af at de
 blev mødt af en side med irrelevant tekst se Figure \ref{fig:findvej}. En af
@@ -385,7 +381,7 @@ Figure \ref{fig:koerselsbeskrivelse}.
     \label{fig:koerselsbeskrivelse}
 \end{figure}
 
-\item[\smallproblem]{\textbf{Højdeguiden er et screenshot}}
+\kommentar{\smallproblem}{Højdeguiden er et screenshot}
 
 Højdeguiden er et screenshot af et Microsoft Excel ark. Dette er ikke optimalt.
 En af vores deltagere prøvede at lukke screenshottet og havde svært med at finde
@@ -395,7 +391,7 @@ ud komme ud af den side.
 Lav screenshottet om til en tabel på selve siden.
 \end{forslag}
 
-\item[\smallproblem] \textbf{Svært at finde konkrete informationer om mad og drikke}
+\kommentar{\smallproblem}{Svært at finde konkrete informationer om mad og drikke}
 
 Under \emph{Mad og drikke} havde deltagerne svært ved at finde konkrete
 informationer. F.eks. om man selv måtte tage mad med, eller om der blev solgt
@@ -403,7 +399,7 @@ pølser. Fårup Grillens side er det sted de fleste kiggede for information om
 pølser, men fik i stedet en masse information om hvordan grillen ikke er. De
 fleste missede det faktum at Grillen faktisk sælger hotdogs.
 
-\item[\goodidea] \textbf{Opdeling i aldersgrupper}
+\kommentar{\goodidea}{Opdeling i aldersgrupper}
 
 En deltager sagde at det kunne være belejligt med links inde under \emph{Parken} der viste
 forlystelser egnede til børn i bestemte aldersgrupper. Hun havde selv et barn på 3 år og havde
@@ -415,7 +411,7 @@ svært ved at finde forlystelser der ville passe til dem.
 \section{Forsiden}
 
 \begin{kommentarer}
-\item[\seriousproblem]{\textbf{Forsiden løser ingen vigtige opgaver}}
+\kommentar{\seriousproblem}{Forsiden løser ingen vigtige opgaver}
 
 Der ikke én af vores deltagere der brugte forsiden til at løse opgaverne. De
 vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skulle
@@ -425,19 +421,18 @@ tilbage fra enten booking- eller e-shopsiden.
 Fårup Sommerland ønsker at deres side leder brugerne hen på e-shoppen og booking-siden. Et foreslag ville være at lave en boks på forsiden med henvisning til disse. En anden mulighed ville være at lave en boks på forsiden med henvisninger til de hyppigst brugte dele af siden, så som åbningstider eller pris. Vi ville også anbefale at ændre det skiftende banner, da det fylder rigtigt meget af siden og ikke videregiver særligt meget vigtigt information.
 \end{forslag}
 
-\item[\good]{\textbf{Forsiden er sjov}}
+\kommentar{\good}{Forsiden er sjov}
 
 Da vi spurgte deltagerne til hvad de synes om forsiden, svarede de fleste
 positivt. Den generelle mening var at de syntes at den var sjov og spændende.
 
-\newpage
-\item[\smallproblem]{\textbf{Forsiden er for lang}}
+\kommentar{\smallproblem}{Forsiden er for lang}
 
 En af vores deltagere klagede over at forsiden var så lang at man ikke kunne
 have det hele på ét skærmbillede, og skulle scrolle ned af den for at få alle
 informationerne.
 
-\item[\goodidea]{\textbf{Få inspiration fra engelsk forside}}
+\kommentar{\goodidea}{Få inspiration fra engelsk forside}
 
 Den engelske version af forsiden vist på Figur \ref{fig:engelskbanner} har en
 god indgangsvinkel til siden. Der er et banner med ofte brugt information, så
@@ -457,7 +452,7 @@ man slipper for at navigere rundt og lede på siden.
 
 % subsection Egne kommentarer (end)
 \begin{kommentarer}
-  \item[\seriousproblem]{\textbf{Skiftende banner bliver hvid}}
+  \kommentar{\seriousproblem}{Skiftende banner bliver hvid}
 
   Det skiftende banner på forsiden viser en hvid baggrund i tredje og fjerde
   billede. Hvis man klikker på den hvide baggrund, får man en fejlmeddelelse
@@ -474,12 +469,12 @@ man slipper for at navigere rundt og lede på siden.
 
 \section{Udseende}
 \begin{kommentarer}
-  \item[\good]{\textbf{Skovtema}}
+  \kommentar{\good}{Skovtema}
   
   Deltagerne syntes overvejende godt om det grønne skovtema, med
   undtagelse af deltager 4, som ikke var så vild med skovtemaet.
 
-  \item[\smallproblem]{\textbf{Egern-animation}} 
+  \kommentar{\smallproblem}{Egern-animation}
   
   Tre af deltagerne kunne godt lide egernet i baggrundsbilledet. En deltager
   synes det var dumt, men at det måske passede til siden, og en anden synes rent
@@ -489,42 +484,42 @@ man slipper for at navigere rundt og lede på siden.
 \subsection{Egne kommentarer}
 
 \begin{kommentarer}
-  \item[\smallproblem]{\textbf{Overskrift på undermenuer er hvide}}
+    \kommentar{\smallproblem}{Overskrift på undermenuer er hvide}
 
-  Som set på Figur \ref{fig:hvideblokke} oplever vi på nogle af vores PC'er at
-  overskriften på undermenuerne ikke blev vist, og at der i stedet var et hvidt
-  felt, hvor overskriften skulle være, fordi overskriften var implementeret i
-  flash.
+    Som set på Figur \ref{fig:hvideblokke} oplever vi på nogle af vores PC'er at
+    overskriften på undermenuerne ikke blev vist, og at der i stedet var et hvidt
+    felt, hvor overskriften skulle være, fordi overskriften var implementeret i
+    flash.
+
+    \begin{figure}[htbp]
+        \centering
+        \fbox{\includegraphics[scale=0.4]{Pics/HvideBlokke}}
+        \caption{Overskrifterne bliver til hvide blokke på nogle maskiner.}
+        \label{fig:hvideblokke}
+    \end{figure}
 \end{kommentarer}
 
 
-\begin{figure}[htbp]
-    \centering
-    \fbox{\includegraphics[width=0.5\textwidth]{Pics/HvideBlokke}}
-    \caption{Overskrifterne bliver til hvide blokke på nogle maskiner.}
-    \label{fig:hvideblokke}
-\end{figure}
 
 \section{Andet}
 \begin{kommentarer}
 
-\item[\criticalproblem]{\textbf{E-Shop var lukket}}
+\kommentar{\criticalproblem}{E-Shop var lukket}
 
 Vi kunne ikke teste e-shoppen da den var lukket.
 
-\item[\smallproblem]{\textbf{Navn på E-shop}}
+\kommentar{\smallproblem}{Navn på E-shop}
 
 I menulinjen står der ``E-shop'', men andre steder på hjemmesiden nævnes det som
 ``webshoppen''. Der var ingen af vores deltagere der brugte e-shop-linket i
 menubjælken, under den opgave hvor de skulle købe billetter.
 
-\item[\smallproblem]{\textbf{Funzone er gemt væk}}
+\kommentar{\smallproblem}{Funzone er gemt væk}
 
 Testdeltagerne kunne godt lide idéen om funzone, men den er gemt så langt væk de
 ikke ville opdage den hvis de ikke ledte efter den.
 
-\newpage
-\item[\smallproblem]{\textbf{404-side er ikke vejledende}}
+\kommentar{\smallproblem}{404-side er ikke vejledende}
 
 Hvis man prøver på at gå ind på en side der ikke findes får man en 404-siden
 vist på Figur \ref{fig:404} som er meget sparsom på information. Desuden er
@@ -534,7 +529,7 @@ tips til hvordan man finder det man leder efter, via menuerne eller søgning.
 
 \begin{figure}[htbp]
     \centering
-    \fbox{\includegraphics[width=0.99\textwidth]{Pics/404}}
+    \fbox{\includegraphics[width=0.8\textwidth]{Pics/404}}
     \caption{404 siden.}
     \label{fig:404}
 \end{figure}
@@ -582,12 +577,10 @@ kategorier og er udgangspunktet for vores rapport.
 \subsection{Profiler for testdeltagere}
 
 Testdeltagerne leved op til følgende krav:
-
 \begin{itemize}
 \item Kvinder
 \item Har børn
 \end{itemize}
-
 Siden Fårup Sommerland fortalte at deres hovedmålgruppe var børnefamilier med specielt fokus på mødrene, er det også dem vi har gået efter som testpersoner.
 
 \begin{table}[htb]
@@ -865,8 +858,6 @@ opgave-orienteret. Det gjorde at vi fandt mange flere fejl, som ville være et
 problem for \emph{Fårup Sommerlands} normale besøgende, og dermed også
 vigtigere for \emph{Fårup Sommerland} at rette.
 
-\clearpage
-
 \section{Vores kommentarer til øvelsen}
 \label{apx:vores-kommentarer}
 
@@ -874,7 +865,7 @@ Vi syntes generelt at det har været en lærerig øvelse. I forhold til øvelse 
 
 Vi er ikke helt tilfredse med de udgaver af Fårups sider, vi har skulle bruge. At bede os om at teste e-shoppen grundtigt, og samtidigt lukke den, er ikke så godt. Det samme gælder til dels for booking-siden, hvor det heller ikke var alle søgeforespørgelser der fungere. Det har selvfølgelig også sat sit præg på testene og vores resultater.
 
-\begin{figure}[htbp]
+\begin{table}[htbp]
   \centering
   \begin{tabular}{lcccc}
     \toprule
@@ -889,5 +880,6 @@ Vi er ikke helt tilfredse med de udgaver af Fårups sider, vi har skulle bruge. 
   \end{tabular}
   \caption{En tabel over vores tidforbrug}
   \label{tab:tidsforbrug}
-\end{figure}
+\end{table}
+
 \end{document} 
