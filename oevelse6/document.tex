@@ -131,8 +131,8 @@ positive forhold og de problemer som testen har afsløret.\\
     \item \textbf{Gør søgefunktionen mere synlig}\\
         Vi foreslår at søgefunktionen gøres mere synlig ved at tilføje et
         søgefelt til venstre for søgeknappen. Søgefeltet skal vises på alle
-        sider, også på bookingportaler og webshoppen. Søgefunktionen udvides så
-        den også søger på indhold i bookingportalen og webshoppen.
+        sider, også på bookingportaler og e-shoppen. Søgefunktionen udvides så
+        den også søger på indhold i bookingportalen og e-shoppen.
 \end{itemize}
 Fårup Sommerland har bedt os tage stilling til om den nuværende side
 er værd at bygge videre på, eller om der skal laves en helt ny.
@@ -278,8 +278,9 @@ opdagede ikke dette og det gav dem problemer da de prøvede at komme tilbage til
 For at komme tilbage til hovedsiden prøvede én testdeltager at klikke på
 \emph{Du er her: Forside}-linket, men dette førte hende ikke til hovedsiden som
 forventet. Andre deltagere prøvede at bruge Tilbage-knappen (hvilket ikke
-virkede da siden var åbnet et nyt vindue) og én valgte at indtaste
-\url{faarupsommerland.dk} i addressefeltet.
+virkede da siden var åbnet et nyt vindue), nogle prøvede at klikke på Fårup
+Sommerland logoet og én valgte til sidst at indtaste \url{faarupsommerland.dk} i
+addressefeltet.
 
 \begin{forslag}
 Alle delsider samles under en hovedside, hvor alle sider har samme menupunkter
@@ -290,11 +291,11 @@ til \url{faarupsommerland.dk}. Vi mener desuden at alle links til E-shop eller
 booking skal åbnes i det aktuelle vindue.
 \end{forslag}
 
-\kommentar{\smallproblem}{Fårup Sommerland-logoet fører ikke altid til forsiden}
+% \kommentar{\smallproblem}{Fårup Sommerland-logoet fører ikke altid til forsiden}
 
-På bookingportalen og webshoppen bliver man ikke ført til hovedsiden hvis man
-klikker på Fårup Sommerland-logoet. Et par testdeltagere løb ind i dette problem
-når de prøvede at komme tilbage til hovedsiden.
+% På bookingportalen og webshoppen bliver man ikke ført til hovedsiden hvis man
+% klikker på Fårup Sommerland-logoet. Et par testdeltagere løb ind i dette problem
+% når de prøvede at komme tilbage til hovedsiden.
 
 \kommentar{\smallproblem}{\emph{Mad og drikke} og \emph{Butikker} er placeret forskelligt}
 
@@ -340,12 +341,13 @@ udfyldt korrekt.
     \label{fig:fejlmeddelelsebooking}
 \end{figure}
 
-\kommentar{\goodidea}{Det glemte hotel}
+\kommentar{\goodidea}{Siden husker ikke hotellet man ønsker at bestille}
 
-En af testdeltagerne prøvede at booke siden ved først at finde hotellet under
-\emph{Overnatningssteder}. Da hun trykkede på hotellet, ville hun have det tog det hende
-ind på bookingsiden, hvor den havde glemt hvilket hotel hun havde valgt. Dette
-kunne spare tid hvis den huskede hotellet.
+En af testdeltagerne prøvede at lave en booking ved først at finde hotellet
+under \emph{Overnatningssteder}. Da hun trykkede \emph{Bestil} hotellets side,
+forventede hun at det tog det hende ind på bookingsiden for det hotel, men hun
+blev ført til forsiden af bookingportalen hvor den havde glemt hvilket hotel
+hun havde valgt.
 
 \end{kommentarer}
 
@@ -366,7 +368,9 @@ deltagerene sagde at de ville have givet op og ringet til Fårup Sommerland i
 stedet.
 
 \begin{forslag}
-Hvor der er meget tekst kunne man skrive et kort resumé inden teksten. Derudover kunne man fremhæve nøgleordene enten med fed tekst eller understregning. 
+Hvor der er meget tekst kunne man skrive et kort resumé inden teksten.
+Derudover kunne man fremhæve nøgleordene enten med fed tekst eller
+understregning. 
 \end{forslag}
 
 \kommentar{\smallproblem}{\emph{Find vej} er mangelfuld}
@@ -391,23 +395,25 @@ koordinater hvis man har en GPS. Adressen er faktisk slet ikke at finde på
     \label{fig:koerselsbeskrivelse}
 \end{figure}
 
+\begin{samepage}
 \kommentar{\smallproblem}{Højdeguiden er et screenshot}
 
-Højdeguiden er et screenshot af et Microsoft Excel ark. Dette er ikke optimalt.
-En af vores deltagere prøvede at lukke screenshottet og havde svært med at finde
-ud komme ud af den side.
+Højdeguiden er et screenshot af et Microsoft Excel ark. Flere deltagere
+studsede lidt over det og en af vores deltagere prøvede at lukke screenshottet
+for at komme tilbage.
 
 \begin{forslag}
 Lav screenshottet om til en tabel på selve siden.
 \end{forslag}
+\end{samepage}
 
-\kommentar{\smallproblem}{Svært at finde konkrete informationer om mad og drikke}
+% \kommentar{\smallproblem}{Svært at finde konkrete informationer om mad og drikke}
 
-Under \emph{Mad og drikke} havde deltagerne svært ved at finde konkrete
-informationer. F.eks. om man selv måtte tage mad med, eller om der blev solgt
-pølser. Fårup Grillens side er det sted de fleste kiggede for information om
-pølser, men fik i stedet en masse information om hvordan grillen ikke er. De
-fleste missede det faktum at Grillen faktisk sælger hotdogs.
+% Under \emph{Mad og drikke} havde deltagerne svært ved at finde konkrete
+% informationer. F.eks. om man selv måtte tage mad med, eller om der blev solgt
+% pølser. Fårup Grillens side er det sted de fleste kiggede for information om
+% pølser, men en masse information om hvordan grillen ikke er. De
+% fleste missede det faktum at Grillen faktisk sælger hotdogs.
 
 \kommentar{\goodidea}{Opdeling i aldersgrupper}
 
@@ -428,7 +434,12 @@ vendte heller ikke tilbage til forsiden iløbet at testen, undtagen når de skul
 tilbage fra enten booking- eller e-shopsiden.
 
 \begin{forslag}
-Fårup Sommerland ønsker at deres side leder brugerne hen på e-shoppen og booking-siden. Et foreslag ville være at lave en boks på forsiden med henvisning til disse. En anden mulighed ville være at lave en boks på forsiden med henvisninger til de hyppigst brugte dele af siden, så som åbningstider eller pris. Vi ville også anbefale at ændre det skiftende banner, da det fylder rigtigt meget af siden og ikke videregiver særligt meget vigtigt information.
+Fårup Sommerland ønsker at deres side leder brugerne hen på e-shoppen og
+booking-siden. Et foreslag ville være at lave en boks på forsiden med
+henvisning til disse. En anden mulighed ville være at lave en boks på forsiden
+med henvisninger til de hyppigst brugte dele af siden, så som åbningstider
+eller pris. Vi ville også anbefale at ændre det skiftende banner, da det fylder
+rigtigt meget af siden og ikke videregiver særligt meget vigtigt information.
 \end{forslag}
 
 \kommentar{\good}{Forsiden er sjov}
@@ -457,10 +468,8 @@ man slipper for at navigere rundt og lede på siden. Det skal dog lige i mente a
     \label{fig:engelskbanner}
 \end{figure}
 
-\subsection{Egne kommentarer} % (fold)
-\label{sub:Egne kommentarer forsiden}
+\subsection{Egne kommentarer}
 
-% subsection Egne kommentarer (end)
 \begin{kommentarer}
   \kommentar{\seriousproblem}{Skiftende banner bliver hvid}
 
@@ -477,12 +486,20 @@ man slipper for at navigere rundt og lede på siden. Det skal dog lige i mente a
     \label{fig:fejlmeddelelse}
 \end{figure}
 
+
 \section{Udseende}
+
 \begin{kommentarer}
-  \kommentar{\good}{Skovtema}
+  \kommentar{\good}{Skovtemaet er godt}
   
   Deltagerne syntes overvejende godt om det grønne skovtema, med
   undtagelse af deltager 4, som ikke var så vild med skovtemaet.
+
+  \kommentar{\good}{Siden er troværdig}
+  
+  Alle deltagerne syntes at siden virker troværdig og ville ikke have noget
+  problem med at lave bestillinger på siden. Én deltager nævnte at e-mærket
+  (eller noget ligende) ville gøre hende mere tryk.
 
   \kommentar{\smallproblem}{Egern-animation}
   
@@ -513,7 +530,7 @@ man slipper for at navigere rundt og lede på siden. Det skal dog lige i mente a
 \section{Andet}
 \begin{kommentarer}
 
-\kommentar{\criticalproblem}{E-Shop var lukket}
+\kommentar{\criticalproblem}{E-shop var lukket}
 
 Vi kunne ikke teste e-shoppen da den var lukket.
 
@@ -782,7 +799,7 @@ køber billet eller ophold?
 \item Havde du nemt/svært ved at finde de ting du skulle på siden?
 \item Hvad synes du om menu-punkterne og opdelingen af siden?
 \item Var du i tvivl om hvor du skulle kigge først for at løse opgaverne, eller fandt du det nemt?
-\item Fandt du siden troværdig? Ville du have tiltro til at bruge faarupbooking.dk eller faarupshoppen.dk? Hvad kunne gøre den mere troværdig?
+\item Fandt du siden troværdig? Ville du have tiltro til at bruge \url{faarupbooking.dk} eller \url{faarupshoppen.dk}? Hvad kunne gøre den mere troværdig?
 \item Hvad synes du om forsiden?
 \item Fandt du forsiden hjælpsom til løsning af opgaverne?
 \item Hvad synes du om skov-temaet på siden, og den animerede baggrund?
@@ -794,11 +811,25 @@ køber billet eller ophold?
 
 \begin{table}[htb]
 \section{Testdeltagernes opgaveløsning}
+I table \ref{tbl:oversigt} ses en oversigt over hvilke opgaver de enkelte
+deltagere nåede. Der hvor opgaven blev nået, viser symbolet for svært deltageren
+havde ved løse opgaven.
+\begin{small}
+\begin{itemize}
+    \renewcommand\pic[1]{\includegraphics[trim=0 4.5 0 0,scale=.6]{Pics/#1}}
+    \item[\good] Løst uden problemer. Dette symbol anvendes også, hvis deltageren korrekt finder ud af at oplysningen ikke findes på webstedet.
+    \item[\smallproblem] Løst med småproblemer.
+    \item[\seriousproblem] Løst, men der optrådte alvorlige problemer undervejs, som forsinkede deltageren væsentligt.
+    \item[\criticalproblem] Deltageren opgav at løse opgaven eller nåede et resultat, som afveg væsentligt fra det ønskede.
+    \item[\scriptsize (blank)] Opgaven blev sprunget over.
+    \item[---] Deltageren ville ikke bruge Fårup Sommerland til at løse denne opgave.
+\end{itemize}
+\end{small}
 \begin{center}
 \caption{Oversigt over testdeltagernes opgaveløsning.}
 \label{tbl:oversigt}
 \renewcommand\pic[1]{\includegraphics[trim=0 6 0 0,scale=.8]{Pics/#1}}
-\begin{tabular}{l@{\hspace{1.5cm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c}
+\scalebox{0.8}{\begin{tabular}{l@{\hspace{1.5cm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{\hspace{6mm}}c}
     \toprule
     Opgave\ \textbackslash\ Deltager  & 1             & 2                & 3               & 4               & 5                \\
     \midrule
@@ -824,7 +855,7 @@ køber billet eller ophold?
     14.b. Egen mad og drikke       & \good            & \seriousproblem  & \seriousproblem & \smallproblem   & \good            \\ [3mm]
     14.c. Underholdning            & \good            & \smallproblem    & \smallproblem   & \good           & \smallproblem    \\ [3mm]
     \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{center}
 \end{table}
 
@@ -870,9 +901,19 @@ vigtigere for \emph{Fårup Sommerland} at rette.
 \section{Vores kommentarer til øvelsen}
 \label{apx:vores-kommentarer}
 
-Vi syntes generelt at det har været en lærerig øvelse. I forhold til øvelse 4 var denne betydeligt bedre, da vi havde et mere færdigt produkt at teste. Det giver mere frihed til at lave realistiske, åbne og omfattende opgaver. Der er meget arbejde indvolveret i at lave disse tests og også i den efterfølgende analyse. Vi havde nogen gange svært ved ikke at give hjælp når vi kunne se at en testdeltager havde meget svært ved en opgave. Det kunne vi godt tænke os at være bedre til, næste gang. 
+Vi syntes generelt at det har været en lærerig øvelse. I forhold til øvelse 4
+var denne betydeligt bedre, da vi havde et mere færdigt produkt at teste. Det
+giver mere frihed til at lave realistiske, åbne og omfattende opgaver. Der er
+meget arbejde indvolveret i at lave disse tests og også i den efterfølgende
+analyse. Vi havde nogen gange svært ved ikke at give hjælp når vi kunne se at
+en testdeltager havde meget svært ved en opgave. Det kunne vi godt tænke os at
+være bedre til, næste gang. 
 
-Vi er ikke helt tilfredse med de udgaver af Fårups sider, vi har skulle bruge. At bede os om at teste e-shoppen grundtigt, og samtidigt lukke den, er ikke så godt. Det samme gælder til dels for booking-siden, hvor det heller ikke var alle søgeforespørgelser der fungere. Det har selvfølgelig også sat sit præg på testene og vores resultater.
+Vi er ikke helt tilfredse med de udgaver af Fårups sider, vi har skulle bruge.
+At bede os om at teste e-shoppen grundtigt, og samtidigt lukke den, er ikke så
+godt. Det samme gælder til dels for booking-siden, hvor det heller ikke var
+alle søgeforespørgelser der fungere. Det har selvfølgelig også sat sit præg på
+testene og vores resultater.
 
 \begin{table}[htbp]
   \centering
